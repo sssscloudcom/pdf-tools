@@ -1,0 +1,220 @@
+{
+  "site": {
+    "title": "PDF工具 - 免费在线PDF和图片压缩工具",
+    "description": "免费在线PDF和图片工具。压缩PDF、压缩图片、PDF转JPG等。100%浏览器端处理，保护您的隐私安全。"
+  },
+  "nav": {
+    "compressPdf": "PDF压缩",
+    "compressImage": "图片压缩",
+    "pdfToJpg": "PDF转JPG",
+    "jpgToPdf": "JPG转PDF"
+  },
+  "home": {
+    "title": "免费PDF和图片工具",
+    "subtitle": "100%浏览器端处理。您的文件永远不会离开您的设备。快速、安全、完全免费。",
+    "features": {
+      "private": {
+        "title": "100%私密",
+        "desc": "所有处理都在您的浏览器中进行。您的文件永远不会离开您的设备。"
+      },
+      "fast": {
+        "title": "闪电般快速",
+        "desc": "无需上传等待。在您的设备上即时处理文件。"
+      },
+      "free": {
+        "title": "完全免费",
+        "desc": "无文件限制、无水印、无需注册。"
+      }
+    }
+  },
+  "tools": {
+    "compressPdf": {
+      "title": "PDF压缩",
+      "desc": "在保持质量的同时减小PDF文件大小"
+    },
+    "compressImage": {
+      "title": "图片压缩",
+      "desc": "在线压缩JPEG、PNG、WebP图片"
+    },
+    "pdfToJpg": {
+      "title": "PDF转JPG",
+      "desc": "将PDF页面转换为JPG图片"
+    },
+    "jpgToPdf": {
+      "title": "JPG转PDF",
+      "desc": "将图片转换为PDF文档"
+    }
+  },
+  "pdfToJpg": {
+    "title": "PDF转JPG转换器",
+    "description": "将PDF页面转换为高质量JPG图片。100%浏览器端处理，保护您的隐私。",
+    "tip": "提示：选择PDF文件进行转换。最大文件大小：50MB",
+    "convert": "转换为JPG",
+    "processing": "正在转换PDF为JPG...",
+    "download": "下载",
+    "downloadAll": "下载全部",
+    "another": "转换另一个PDF",
+    "result": { "title": "转换完成！已转换{{count}}页", "pages": "{{count}}页" }
+  },
+  "jpgToPdf": {
+    "title": "JPG转PDF转换器",
+    "description": "将多个JPG/PNG图片合并为一个PDF文档。100%浏览器端处理。",
+    "tip": "提示：选择多个图片进行合并。支持JPG和PNG格式。每文件最大50MB。",
+    "merge": "合并为PDF",
+    "processing": "正在合并图片为PDF...",
+    "download": "下载PDF",
+    "another": "合并另一个",
+    "imagesSelected": "已选择{{count}}张图片",
+    "result": { "title": "合并完成！", "pages": "已创建包含{{count}}页的PDF" }
+  },
+  "common": {
+    "clear": "清空"
+  },
+  "compressPdf": {
+    "title": "PDF压缩",
+    "description": "在保持文档质量的同时减小PDF文件大小。所有处理都在您的浏览器中进行。",
+    "dropzone": {
+      "title": "拖放文件到此处",
+      "subtitle": "或点击从设备浏览"
+    },
+    "quality": "质量",
+    "compress": "压缩PDF",
+    "processing": "处理中...",
+    "result": {
+      "title": "压缩完成！",
+      "saved": "文件大小减少了{{ratio}}%",
+      "originalSize": "原始大小",
+      "compressedSize": "压缩后大小",
+      "savedLabel": "节省",
+      "download": "下载压缩后的PDF",
+      "another": "压缩另一个PDF"
+    },
+    "seo": {
+      "title": "如何压缩PDF文件",
+      "p1": "我们的PDF压缩器完全在您的浏览器中工作，在本地处理您的文件，无需上传到任何服务器。这确保了最大的隐私和安全性，同时提供快速的压缩结果。",
+      "p2": "压缩过程通过删除冗余数据、合并资源和使用更高效的存储方法来优化PDF结构。您文档的视觉质量保持不变，同时文件大小减小。",
+      "p3": "此工具非常适合减小大型PDF文件以便电子邮件附件、优化文档以便网络上传或在设备上节省存储空间。没有文件大小限制或水印添加到您的文档。"
+    }
+  },
+  "compressImage": {
+    "title": "图片压缩",
+    "description": "减小JPEG、PNG和WebP图片的文件大小。所有处理都在您的浏览器中进行。",
+    "dropzone": {
+      "title": "拖放文件到此处",
+      "subtitle": "或点击从设备浏览"
+    },
+    "quality": "质量：{{value}}%",
+    "smallerFile": "更小文件",
+    "betterQuality": "更好质量",
+    "compress": "压缩图片",
+    "processing": "处理中...",
+    "result": {
+      "title": "压缩完成！",
+      "saved": "文件大小减少了{{ratio}}%",
+      "originalSize": "原始大小",
+      "compressedSize": "压缩后大小",
+      "savedLabel": "节省",
+      "download": "下载压缩后的图片",
+      "another": "压缩另一张图片"
+    },
+    "seo": {
+      "title": "如何压缩图片",
+      "p1": "我们的图片压缩器完全在您的浏览器中工作，在本地处理JPEG、PNG和WebP图片，无需上传到任何服务器。这确保了最大的隐私并提供快速的压缩结果。",
+      "p2": "您可以调整质量滑块来平衡文件大小和图片质量。更高的质量意味着更大的文件但更好的视觉效果，而更低的质量会产生更小的文件但有一些视觉降级。",
+      "p3": "此工具非常适合优化网站图片、减小电子邮件附件的文件大小或节省存储空间。没有文件大小限制或您可以执行的压缩次数限制。"
+    }
+  },
+  "footer": {
+    "title": "PDF工具",
+    "desc": "免费在线PDF和图片工具。100%浏览器端处理，保护您的隐私。",
+    "tools": "工具",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "about": "关于我们",
+    "terms": "服务条款",
+    "copyright": "© {{year}} PDF工具。保留所有权利。"
+  },
+  "legal": {
+    "privacy": {
+      "title": "隐私政策",
+      "updated": "最后更新：{{date}}",
+      "s1Title": "1. 浏览器端处理",
+      "s1Desc": "PDF工具上的所有文件处理完全在您的Web浏览器中进行。您的文件永远不会上传到我们的服务器或任何第三方服务器。这意味着您的文档和图片在您自己的设备上保持完全私密和安全。",
+      "s2Title": "2. 无数据收集",
+      "s2Desc": "我们不收集、存储或传输您的任何文件或个人数据。当您使用我们的工具时，处理使用JavaScript库在您的设备本地进行。一旦您关闭浏览器选项卡或导航离开页面，所有处理的数据都会自动从内存中清除。",
+      "s3Title": "3. 分析",
+      "s3Desc": "我们可能使用Google Analytics收集匿名使用统计数据（如页面浏览量和工具使用情况）以改进我们的服务。此数据不包括任何个人信息或文件内容。",
+      "s4Title": "4. Cookie",
+      "s4Desc": "我们仅使用Cookie来记住您的首选项（如语言设置）和用于分析目的。没有Cookie用于跟踪您的文件或处理活动。",
+      "s5Title": "5. 第三方服务",
+      "s5Desc": "我们可能通过Google AdSense展示广告。这些广告可能使用Cookie提供相关广告。有关更多信息，请参阅Google的隐私政策。",
+      "s6Title": "6. 安全",
+      "s6Desc": "由于所有处理都在您的浏览器本地进行，您的文件受到您设备安全措施的保护。我们建议使用具有最新安全补丁的最新浏览器。",
+      "s7Title": "7. 联系方式",
+      "s7Desc": "如果您对本隐私政策有任何疑问，请通过以下方式联系我们：",
+      "email": "电子邮件：contact@nextapi.pro"
+    },
+    "about": {
+      "title": "关于PDF工具",
+      "p1": "PDF工具是一个免费在线平台，提供易于使用的PDF和图片处理工具。我们的使命是让每个人都能使用文档管理，而不损害隐私或安全。",
+      "philosophy": "我们的理念",
+      "philosophyDesc": "我们相信文件处理工具应该是：",
+      "private": "私密 - 您的文件永远不应离开您的设备",
+      "free": "免费 - 基本工具应对每个人开放",
+      "easy": "简单 - 无需技术知识",
+      "fast": "快速 - 无需上传延迟即可即时处理",
+      "howItWorks": "工作原理",
+      "howItWorksP1": "与将您的文件上传到远程服务器的传统在线工具不同，PDF工具在您的Web浏览器中本地处理所有内容。我们使用现代JavaScript库（如pdf-lib和Mozilla的PDF.js）直接在您的设备上处理PDF操作。",
+      "howItWorksP2": "这种方法有几个优点：",
+      "adv1": "无上传时间 - 处理立即开始",
+      "adv2": "无服务器成本 - 我们可以保持服务免费",
+      "adv3": "无数据泄露 - 您的文件永远不会离开您的设备",
+      "adv4": "离线工作 - 加载后，工具无需互联网即可工作",
+      "availableTools": "可用工具",
+      "tool1": "PDF压缩器 - 减小PDF文件大小",
+      "tool2": "图片压缩器 - 压缩JPEG、PNG、WebP图片",
+      "tool3": "PDF转JPG（即将推出）",
+      "tool4": "JPG转PDF（即将推出）",
+      "contact": "有建议或反馈？给我们发电子邮件：contact@nextapi.pro"
+    },
+    "terms": {
+      "title": "服务条款",
+      "updated": "最后更新：{{date}}",
+      "s1Title": "1. 接受条款",
+      "s1Desc": "通过访问和使用PDF工具，您同意受这些服务条款和所有适用法律和法规的约束。如果您不同意这些条款中的任何一项，则禁止您使用或访问本网站。",
+      "s2Title": "2. 使用许可",
+      "s2Desc": "授予临时使用PDF工具用于个人、非商业目的的许可。这是授予许可，而非所有权转移，在此许可下您不得：",
+      "license1": "修改或复制网站的源代码",
+      "license2": "未经许可将服务用于任何商业目的",
+      "license3": "尝试反向工程网站上包含的任何软件",
+      "license4": "删除任何版权或所有权声明",
+      "s3Title": "3. 免责声明",
+      "s3Desc": "PDF工具按\"原样\"提供，不提供任何明示或暗示的保证。我们不保证：",
+      "disclaimer1": "服务将不间断或无错误",
+      "disclaimer2": "使用服务的结果将是准确或可靠的",
+      "disclaimer3": "任何产品、服务或信息的质量将满足您的期望",
+      "s4Title": "4. 限制",
+      "s4Desc": "在任何情况下，PDF工具或其运营商均不对因使用或无法使用服务而产生的任何损害承担责任，即使我们已被告知此类损害的可能性。",
+      "s5Title": "5. 用户责任",
+      "s5Desc": "您有责任：",
+      "resp1": "确保您有权处理您上传的任何文件",
+      "resp2": "不将服务用于非法或有害目的",
+      "resp3": "维护您自己的设备和浏览器的安全",
+      "s6Title": "6. 修改",
+      "s6Desc": "我们保留随时修改或停止服务的权利，恕不另行通知。我们不对您或任何第三方因服务的任何修改、暂停或终止承担责任。",
+      "s7Title": "7. 管辖法律",
+      "s7Desc": "这些条款和条件受适用法律管辖并据其解释，您不可撤销地接受该地法院的专属管辖权。",
+      "s8Title": "8. 联系方式",
+      "s8Desc": "有关服务条款的问题应发送至：contact@nextapi.pro"
+    }
+  },
+  "comingSoon": {
+    "title": "开发中",
+    "desc": "此工具目前正在开发中。请稍后再来！"
+  },
+  "error": {
+    "invalidPdf": "请选择有效的PDF文件",
+    "invalidImage": "请选择有效的图片（JPEG、PNG或WebP）",
+    "compressionFailed": "{{type}}压缩失败"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PDF Tools",
+    "url": "https://pdftools.nextapi.pro",
+    "description": "Free online PDF and image compression tools. 100% browser-based processing for privacy and security.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pdftools.nextapi.pro/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PDF Compressor",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Reduce PDF file size while maintaining document quality. 100% browser-based processing.",
+    "url": "https://pdftools.nextapi.pro/compress-pdf"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Image Compressor",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Compress JPEG, PNG, WebP images online. 100% browser-based processing.",
+    "url": "https://pdftools.nextapi.pro/compress-image"
+  }
+]

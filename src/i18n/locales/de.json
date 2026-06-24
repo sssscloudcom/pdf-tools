@@ -1,0 +1,60 @@
+{
+  "site": {
+    "title": "PDF Tools - Kostenloser Online PDF- & Bildkompressor",
+    "description": "Kostenlose Online-PDF- und Bildtools. PDF komprimieren, Bilder komprimieren, PDF in JPG umwandeln und mehr. 100% browserbasierte Verarbeitung für Datenschutz und Sicherheit."
+  },
+  "nav": {
+    "compressPdf": "PDF-Kompressor",
+    "compressImage": "Bildkompressor",
+    "pdfToJpg": "PDF zu JPG",
+    "jpgToPdf": "JPG zu PDF"
+  },
+  "home": {
+    "title": "Kostenlose PDF- & Bildtools",
+    "subtitle": "100% browserbasierte Verarbeitung. Ihre Dateien verlassen niemals Ihr Gerät. Schnell, sicher und komplett kostenlos.",
+    "features": {
+      "private": { "title": "100% Privat", "desc": "Die gesamte Verarbeitung erfolgt in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät." },
+      "fast": { "title": "Blitzschnell", "desc": "Keine Wartezeit beim Hochladen. Verarbeiten Sie Dateien sofort auf Ihrem Gerät." },
+      "free": { "title": "Komplett Kostenlos", "desc": "Keine Dateibeschränkungen, keine Wasserzeichen, keine Registrierung erforderlich." }
+    }
+  },
+  "tools": {
+    "compressPdf": { "title": "PDF komprimieren", "desc": "PDF-Dateigröße reduzieren bei Beibehaltung der Qualität" },
+    "compressImage": { "title": "Bild komprimieren", "desc": "JPEG-, PNG-, WebP-Bilder online komprimieren" },
+    "pdfToJpg": { "title": "PDF zu JPG", "desc": "PDF-Seiten in JPG-Bilder umwandeln" },
+    "jpgToPdf": { "title": "JPG zu PDF", "desc": "Bilder in PDF-Dokument umwandeln" }
+  },
+  "compressPdf": {
+    "title": "PDF komprimieren",
+    "description": "Reduzieren Sie die PDF-Dateigröße bei Beibehaltung der Dokumentqualität. Die gesamte Verarbeitung erfolgt in Ihrem Browser.",
+    "dropzone": { "title": "Ziehen Sie Ihre Datei hierher", "subtitle": "oder klicken Sie, um von Ihrem Gerät zu durchsuchen" },
+    "tip": "Tipp: Wählen Sie eine PDF-Datei aus, um die Komprimierung zu starten. Maximale Dateigröße: 50 MB",
+    "compress": "PDF komprimieren",
+    "processing": "Wird verarbeitet...",
+    "result": { "title": "Komprimierung abgeschlossen!", "saved": "Dateigröße um {{ratio}}% reduziert", "originalSize": "Originalgröße", "compressedSize": "Komprimierte Größe", "savedLabel": "Gespart", "download": "Komprimiertes PDF herunterladen", "another": "Eine weitere PDF komprimieren" }
+  },
+  "compressImage": {
+    "title": "Bild komprimieren",
+    "description": "Reduzieren Sie die Bildgröße für JPEG, PNG und WebP. Die gesamte Verarbeitung erfolgt in Ihrem Browser.",
+    "dropzone": { "title": "Ziehen Sie Ihre Datei hierher", "subtitle": "oder klicken Sie, um von Ihrem Gerät zu durchsuchen" },
+    "tip": "Tipp: Wählen Sie ein Bild aus, um die Komprimierung zu starten. Maximale Dateigröße: 50 MB",
+    "quality": "Qualität: {{value}}%",
+    "smallerFile": "Kleinere Datei",
+    "betterQuality": "Bessere Qualität",
+    "compress": "Bild komprimieren",
+    "processing": "Wird verarbeitet...",
+    "result": { "title": "Komprimierung abgeschlossen!", "saved": "Dateigröße um {{ratio}}% reduziert", "originalSize": "Originalgröße", "compressedSize": "Komprimierte Größe", "savedLabel": "Gespart", "download": "Komprimiertes Bild herunterladen", "another": "Ein weiteres Bild komprimieren" }
+  },
+  "footer": {
+    "title": "PDF Tools",
+    "desc": "Kostenlose Online-PDF- und Bildtools. 100% browserbasierte Verarbeitung für Ihre Privatsphäre.",
+    "tools": "Werkzeuge",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "about": "Über uns",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© {{year}} PDF Tools. Alle Rechte vorbehalten."
+  },
+  "comingSoon": { "title": "In Entwicklung", "desc": "Dieses Tool wird derzeit entwickelt. Schauen Sie bald wieder vorbei!" },
+  "error": { "invalidPdf": "Bitte wählen Sie eine gültige PDF-Datei aus", "invalidImage": "Bitte wählen Sie ein gültiges Bild (JPEG, PNG oder WebP) aus", "compressionFailed": "Fehler beim Komprimieren von {{type}}" }
+}
