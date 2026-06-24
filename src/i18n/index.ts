@@ -33,8 +33,13 @@ i18n
     resources,
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
+    detection: {
+      order: ['querystring', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lang',
+      caches: ['localStorage'],
+    },
   })
 
 export default i18n
