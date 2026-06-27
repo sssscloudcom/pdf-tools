@@ -54,7 +54,10 @@
     "download": "Descargar",
     "downloadAll": "Descargar Todo",
     "another": "Convertir otro PDF",
-    "result": { "title": "¡Conversión Completada! {{count}} páginas convertidas", "pages": "{{count}} páginas" }
+    "result": {
+      "title": "¡Conversión Completada! {{count}} páginas convertidas",
+      "pages": "{{count}} páginas"
+    }
   },
   "jpgToPdf": {
     "title": "Convertidor de JPG a PDF",
@@ -65,10 +68,19 @@
     "download": "Descargar PDF",
     "another": "Combinar otro",
     "imagesSelected": "{{count}} imágenes seleccionadas",
-    "result": { "title": "¡Combinación Completada!", "pages": "PDF creado con {{count}} páginas" }
+    "result": {
+      "title": "¡Combinación Completada!",
+      "pages": "PDF creado con {{count}} páginas"
+    }
   },
   "common": {
-    "clear": "Limpiar"
+    "clear": "Limpiar",
+    "processing": "Procesando...",
+    "compress": "Comprimir",
+    "download": "Descargar",
+    "copied": "¡Copiado!",
+    "copy": "Copiar",
+    "error": "Error"
   },
   "compressPdf": {
     "title": "Comprimir PDF",

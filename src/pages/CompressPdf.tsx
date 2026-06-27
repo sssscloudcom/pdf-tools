@@ -1,8 +1,10 @@
 import { useState, useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import { PDFDocument } from 'pdf-lib'
 import FileDropZone from '../components/FileDropZone'
 
 export default function CompressPdf() {
+  const { t } = useTranslation()
   const [file, setFile] = useState<File | null>(null)
   const [processing, setProcessing] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -51,7 +53,7 @@ export default function CompressPdf() {
       setProgress(100)
       setResult({ originalSize, compressedSize, blob })
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to compress PDF')
+      setError(err instanceof Error ? err.message : t('common.error') + ': ' + t('tools.compressPdf.title'))
     } finally {
       setProcessing(false)
     }
@@ -116,7 +118,7 @@ export default function CompressPdf() {
               disabled={processing}
               className="btn-primary px-6 py-2 rounded-lg text-white font-medium disabled:opacity-50"
             >
-              {processing ? 'Processing...' : 'Compress PDF'}
+              {processing ? t('common.processing') : t('tools.compressPdf.title')}
             </button>
           </div>
 

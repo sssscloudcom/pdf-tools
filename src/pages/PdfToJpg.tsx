@@ -49,7 +49,7 @@ export default function PdfToJpg() {
       setProgress(100)
       setPages(pageResults)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to convert PDF to JPG')
+      setError(err instanceof Error ? err.message : t('common.error') + ': PDF → JPG')
     } finally {
       setProcessing(false)
     }

@@ -1,7 +1,8 @@
 {
   "site": {
     "title": "PDF Tools - Free Online PDF & Image Compressor",
-    "description": "Free online PDF and image tools. Compress PDF, compress images, convert PDF to JPG, and more. 100% browser-based processing for privacy and security."
+    "description": "Free online PDF and image tools. Compress PDF, compress images, convert PDF to JPG, and more. 100% browser-based processing for privacy and security.",
+    "keywords": "pdf compressor, compress pdf, image compressor, pdf to jpg, jpg to pdf, free pdf tools, pdf tools online, reduce pdf size"
   },
   "nav": {
     "compressPdf": "PDF Compressor",
@@ -54,7 +55,10 @@
     "download": "Download",
     "downloadAll": "Download All",
     "another": "Convert another PDF",
-    "result": { "title": "Conversion Complete! {{count}} pages converted", "pages": "{{count}} pages" }
+    "result": {
+      "title": "Conversion Complete! {{count}} pages converted",
+      "pages": "{{count}} pages"
+    }
   },
   "jpgToPdf": {
     "title": "JPG to PDF Converter",
@@ -65,10 +69,19 @@
     "download": "Download PDF",
     "another": "Merge another",
     "imagesSelected": "{{count}} images selected",
-    "result": { "title": "Merge Complete!", "pages": "Created PDF with {{count}} pages" }
+    "result": {
+      "title": "Merge Complete!",
+      "pages": "Created PDF with {{count}} pages"
+    }
   },
   "common": {
-    "clear": "Clear"
+    "clear": "Clear",
+    "processing": "Processing...",
+    "compress": "Compress",
+    "download": "Download",
+    "copied": "Copied!",
+    "copy": "Copy",
+    "error": "Error"
   },
   "compressPdf": {
     "title": "Compress PDF",

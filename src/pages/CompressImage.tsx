@@ -1,8 +1,10 @@
 import { useState, useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import imageCompression from 'browser-image-compression'
 import FileDropZone from '../components/FileDropZone'
 
 export default function CompressImage() {
+  const { t } = useTranslation()
   const [file, setFile] = useState<File | null>(null)
   const [processing, setProcessing] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -45,7 +47,7 @@ export default function CompressImage() {
         blob: compressedBlob,
       })
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to compress image')
+      setError(err instanceof Error ? err.message : t('common.error') + ': ' + t('tools.compressImage.title'))
     } finally {
       setProcessing(false)
     }
@@ -131,7 +133,7 @@ export default function CompressImage() {
             disabled={processing}
             className="btn-primary w-full px-6 py-3 rounded-lg text-white font-medium disabled:opacity-50"
           >
-            {processing ? 'Processing...' : 'Compress Image'}
+            {processing ? t('common.processing') : t('tools.compressImage.title')}
           </button>
 
           {/* Progress Bar */}

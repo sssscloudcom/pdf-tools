@@ -54,7 +54,10 @@
     "download": "下载",
     "downloadAll": "下载全部",
     "another": "转换另一个PDF",
-    "result": { "title": "转换完成！已转换{{count}}页", "pages": "{{count}}页" }
+    "result": {
+      "title": "转换完成！已转换{{count}}页",
+      "pages": "{{count}}页"
+    }
   },
   "jpgToPdf": {
     "title": "JPG转PDF转换器",
@@ -65,10 +68,19 @@
     "download": "下载PDF",
     "another": "合并另一个",
     "imagesSelected": "已选择{{count}}张图片",
-    "result": { "title": "合并完成！", "pages": "已创建包含{{count}}页的PDF" }
+    "result": {
+      "title": "合并完成！",
+      "pages": "已创建包含{{count}}页的PDF"
+    }
   },
   "common": {
-    "clear": "清空"
+    "clear": "清空",
+    "processing": "处理中...",
+    "compress": "压缩",
+    "download": "下载",
+    "copied": "已复制!",
+    "copy": "复制",
+    "error": "错误"
   },
   "compressPdf": {
     "title": "PDF压缩",

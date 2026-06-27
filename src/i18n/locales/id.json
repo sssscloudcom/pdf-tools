@@ -13,37 +13,80 @@
     "title": "Alat PDF & Gambar Gratis",
     "subtitle": "Pemrosesan 100% di browser. File Anda tidak pernah meninggalkan perangkat Anda. Cepat, aman, dan sepenuhnya gratis.",
     "features": {
-      "private": { "title": "100% Pribadi", "desc": "Semua pemrosesan terjadi di browser Anda. File Anda tidak pernah meninggalkan perangkat Anda." },
-      "fast": { "title": "Sangat Cepat", "desc": "Tidak ada waktu tunggu upload. Proses file secara instan di perangkat Anda." },
-      "free": { "title": "Sepenuhnya Gratis", "desc": "Tidak ada batasan file, tidak ada watermark, tidak perlu registrasi." }
+      "private": {
+        "title": "100% Pribadi",
+        "desc": "Semua pemrosesan terjadi di browser Anda. File Anda tidak pernah meninggalkan perangkat Anda."
+      },
+      "fast": {
+        "title": "Sangat Cepat",
+        "desc": "Tidak ada waktu tunggu upload. Proses file secara instan di perangkat Anda."
+      },
+      "free": {
+        "title": "Sepenuhnya Gratis",
+        "desc": "Tidak ada batasan file, tidak ada watermark, tidak perlu registrasi."
+      }
     }
   },
   "tools": {
-    "compressPdf": { "title": "Kompres PDF", "desc": "Kurangi ukuran file PDF dengan mempertahankan kualitas" },
-    "compressImage": { "title": "Kompres Gambar", "desc": "Kompres gambar JPEG, PNG, WebP secara online" },
-    "pdfToJpg": { "title": "PDF ke JPG", "desc": "Konversi halaman PDF ke gambar JPG" },
-    "jpgToPdf": { "title": "JPG ke PDF", "desc": "Konversi gambar ke dokumen PDF" }
+    "compressPdf": {
+      "title": "Kompres PDF",
+      "desc": "Kurangi ukuran file PDF dengan mempertahankan kualitas"
+    },
+    "compressImage": {
+      "title": "Kompres Gambar",
+      "desc": "Kompres gambar JPEG, PNG, WebP secara online"
+    },
+    "pdfToJpg": {
+      "title": "PDF ke JPG",
+      "desc": "Konversi halaman PDF ke gambar JPG"
+    },
+    "jpgToPdf": {
+      "title": "JPG ke PDF",
+      "desc": "Konversi gambar ke dokumen PDF"
+    }
   },
   "compressPdf": {
     "title": "Kompres PDF",
     "description": "Kurangi ukuran file PDF dengan mempertahankan kualitas dokumen. Semua pemrosesan terjadi di browser Anda.",
-    "dropzone": { "title": "Seret dan lepas file Anda di sini", "subtitle": "atau klik untuk mencari dari perangkat Anda" },
+    "dropzone": {
+      "title": "Seret dan lepas file Anda di sini",
+      "subtitle": "atau klik untuk mencari dari perangkat Anda"
+    },
     "tip": "Tip: Pilih file PDF untuk memulai kompresi. Ukuran maksimal: 50 MB",
     "compress": "Kompres PDF",
     "processing": "Memproses...",
-    "result": { "title": "Kompresi Selesai!", "saved": "Ukuran file berkurang {{ratio}}%", "originalSize": "Ukuran Asli", "compressedSize": "Ukuran Terkompresi", "savedLabel": "Hemat", "download": "Unduh PDF Terkompresi", "another": "Kompres PDF lainnya" }
+    "result": {
+      "title": "Kompresi Selesai!",
+      "saved": "Ukuran file berkurang {{ratio}}%",
+      "originalSize": "Ukuran Asli",
+      "compressedSize": "Ukuran Terkompresi",
+      "savedLabel": "Hemat",
+      "download": "Unduh PDF Terkompresi",
+      "another": "Kompres PDF lainnya"
+    }
   },
   "compressImage": {
     "title": "Kompres Gambar",
     "description": "Kurangi ukuran file gambar untuk JPEG, PNG, dan WebP. Semua pemrosesan terjadi di browser Anda.",
-    "dropzone": { "title": "Seret dan lepas file Anda di sini", "subtitle": "atau klik untuk mencari dari perangkat Anda" },
+    "dropzone": {
+      "title": "Seret dan lepas file Anda di sini",
+      "subtitle": "atau klik untuk mencari dari perangkat Anda"
+    },
     "tip": "Tip: Pilih gambar untuk memulai kompresi. Ukuran maksimal: 50 MB",
     "quality": "Kualitas: {{value}}%",
     "smallerFile": "File lebih kecil",
     "betterQuality": "Kualitas lebih baik",
     "compress": "Kompres Gambar",
     "processing": "Memproses...",
-    "result": { "title": "Kompresi Selesai!", "saved": "Ukuran file berkurang {{ratio}}%", "originalSize": "Ukuran Asli", "compressedSize": "Ukuran Terkompresi", "savedLabel": "Hemat", "download": "Unduh Gambar Terkompresi", "another": "Kompres gambar lainnya" }
+    "result": {
+      "title": "Kompresi Selesai!",
+      "saved": "Ukuran file berkurang {{ratio}}%",
+      "originalSize": "Ukuran Asli",
+      "compressedSize": "Ukuran Terkompresi",
+      "savedLabel": "Hemat",
+      "download": "Unduh Gambar Terkompresi",
+      "another": "Kompres gambar lainnya"
+    }
   },
   "footer": {
     "title": "PDF Tools",
@@ -55,6 +98,22 @@
     "terms": "Ketentuan Layanan",
     "copyright": "© {{year}} PDF Tools. Hak cipta dilindungi."
   },
-  "comingSoon": { "title": "Sedang Dikembangkan", "desc": "Alat ini sedang dikembangkan. Segera hadir!" },
-  "error": { "invalidPdf": "Silakan pilih file PDF yang valid", "invalidImage": "Silakan pilih gambar yang valid (JPEG, PNG, atau WebP)", "compressionFailed": "Gagal mengompres {{type}}" }
+  "comingSoon": {
+    "title": "Sedang Dikembangkan",
+    "desc": "Alat ini sedang dikembangkan. Segera hadir!"
+  },
+  "error": {
+    "invalidPdf": "Silakan pilih file PDF yang valid",
+    "invalidImage": "Silakan pilih gambar yang valid (JPEG, PNG, atau WebP)",
+    "compressionFailed": "Gagal mengompres {{type}}"
+  },
+  "common": {
+    "clear": "Hapus",
+    "processing": "Memproses...",
+    "compress": "Kompres",
+    "download": "Unduh",
+    "copied": "Disalin!",
+    "copy": "Salin",
+    "error": "Kesalahan"
+  }
 }

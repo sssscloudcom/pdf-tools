@@ -13,37 +13,80 @@
     "title": "أدوات PDF وصور مجانية",
     "subtitle": "معالجة 100% في المتصفح. ملفاتك لا تغادر جهازك أبدًا. سريع وآمن ومجاني تمامًا.",
     "features": {
-      "private": { "title": "خصوصية 100%", "desc": "تتم جميع المعالجة في متصفحك. ملفاتك لا تغادر جهازك أبدًا." },
-      "fast": { "title": "سريع جدًا", "desc": "لا وقت انتظار للرفع. معالجة الملفات فورًا على جهازك." },
-      "free": { "title": "مجاني تمامًا", "desc": "بدون حدود للملفات، بدون علامات مائية، بدون تسجيل." }
+      "private": {
+        "title": "خصوصية 100%",
+        "desc": "تتم جميع المعالجة في متصفحك. ملفاتك لا تغادر جهازك أبدًا."
+      },
+      "fast": {
+        "title": "سريع جدًا",
+        "desc": "لا وقت انتظار للرفع. معالجة الملفات فورًا على جهازك."
+      },
+      "free": {
+        "title": "مجاني تمامًا",
+        "desc": "بدون حدود للملفات، بدون علامات مائية، بدون تسجيل."
+      }
     }
   },
   "tools": {
-    "compressPdf": { "title": "ضغط PDF", "desc": "تقليل حجم ملف PDF مع الحفاظ على الجودة" },
-    "compressImage": { "title": "ضغط الصور", "desc": "ضغط صور JPEG و PNG و WebP عبر الإنترنت" },
-    "pdfToJpg": { "title": "PDF إلى JPG", "desc": "تحويل صفحات PDF إلى صور JPG" },
-    "jpgToPdf": { "title": "JPG إلى PDF", "desc": "تحويل الصور إلى مستند PDF" }
+    "compressPdf": {
+      "title": "ضغط PDF",
+      "desc": "تقليل حجم ملف PDF مع الحفاظ على الجودة"
+    },
+    "compressImage": {
+      "title": "ضغط الصور",
+      "desc": "ضغط صور JPEG و PNG و WebP عبر الإنترنت"
+    },
+    "pdfToJpg": {
+      "title": "PDF إلى JPG",
+      "desc": "تحويل صفحات PDF إلى صور JPG"
+    },
+    "jpgToPdf": {
+      "title": "JPG إلى PDF",
+      "desc": "تحويل الصور إلى مستند PDF"
+    }
   },
   "compressPdf": {
     "title": "ضغط PDF",
     "description": "قلل حجم ملف PDF مع الحفاظ على جودة المستند. تتم جميع المعالجة في متصفحك.",
-    "dropzone": { "title": "اسحب ملفك وأفلته هنا", "subtitle": "أو انقر للاستعراض من جهازك" },
+    "dropzone": {
+      "title": "اسحب ملفك وأفلته هنا",
+      "subtitle": "أو انقر للاستعراض من جهازك"
+    },
     "tip": "نصيحة: اختر ملف PDF لبدء الضغط. الحد الأقصى: 50 ميجابايت",
     "compress": "ضغط PDF",
     "processing": "جارٍ المعالجة...",
-    "result": { "title": "اكتمل الضغط!", "saved": "تم تقليل حجم الملف بنسبة {{ratio}}%", "originalSize": "الحجم الأصلي", "compressedSize": "الحجم المضغوط", "savedLabel": "موفر", "download": "تنزيل PDF المضغوط", "another": "ضغط PDF آخر" }
+    "result": {
+      "title": "اكتمل الضغط!",
+      "saved": "تم تقليل حجم الملف بنسبة {{ratio}}%",
+      "originalSize": "الحجم الأصلي",
+      "compressedSize": "الحجم المضغوط",
+      "savedLabel": "موفر",
+      "download": "تنزيل PDF المضغوط",
+      "another": "ضغط PDF آخر"
+    }
   },
   "compressImage": {
     "title": "ضغط الصور",
     "description": "قلل حجم ملفات الصور لـ JPEG و PNG و WebP. تتم جميع المعالجة في متصفحك.",
-    "dropzone": { "title": "اسحب ملفك وأفلته هنا", "subtitle": "أو انقر للاستعراض من جهازك" },
+    "dropzone": {
+      "title": "اسحب ملفك وأفلته هنا",
+      "subtitle": "أو انقر للاستعراض من جهازك"
+    },
     "tip": "نصيحة: اختر صورة لبدء الضغط. الحد الأقصى: 50 ميجابايت",
     "quality": "الجودة: {{value}}%",
     "smallerFile": "ملف أصغر",
     "betterQuality": "جودة أفضل",
     "compress": "ضغط الصورة",
     "processing": "جارٍ المعالجة...",
-    "result": { "title": "اكتمل الضغط!", "saved": "تم تقليل حجم الملف بنسبة {{ratio}}%", "originalSize": "الحجم الأصلي", "compressedSize": "الحجم المضغوط", "savedLabel": "موفر", "download": "تنزيل الصورة المضغوطة", "another": "ضغط صورة أخرى" }
+    "result": {
+      "title": "اكتمل الضغط!",
+      "saved": "تم تقليل حجم الملف بنسبة {{ratio}}%",
+      "originalSize": "الحجم الأصلي",
+      "compressedSize": "الحجم المضغوط",
+      "savedLabel": "موفر",
+      "download": "تنزيل الصورة المضغوطة",
+      "another": "ضغط صورة أخرى"
+    }
   },
   "footer": {
     "title": "PDF Tools",
@@ -55,6 +98,22 @@
     "terms": "شروط الخدمة",
     "copyright": "© {{year}} PDF Tools. جميع الحقوق محفوظة."
   },
-  "comingSoon": { "title": "قيد التطوير", "desc": "هذه الأداة قيد التطوير حاليًا. ترقبوه قريبًا!" },
-  "error": { "invalidPdf": "يرجى اختيار ملف PDF صالح", "invalidImage": "يرجى اختيار صورة صالحة (JPEG أو PNG أو WebP)", "compressionFailed": "فشل ضغط {{type}}" }
+  "comingSoon": {
+    "title": "قيد التطوير",
+    "desc": "هذه الأداة قيد التطوير حاليًا. ترقبوه قريبًا!"
+  },
+  "error": {
+    "invalidPdf": "يرجى اختيار ملف PDF صالح",
+    "invalidImage": "يرجى اختيار صورة صالحة (JPEG أو PNG أو WebP)",
+    "compressionFailed": "فشل ضغط {{type}}"
+  },
+  "common": {
+    "clear": "مسح",
+    "processing": "جاري المعالجة...",
+    "compress": "ضغط",
+    "download": "تحميل",
+    "copied": "تم النسخ!",
+    "copy": "نسخ",
+    "error": "خطأ"
+  }
 }
