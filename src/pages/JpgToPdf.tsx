@@ -56,7 +56,7 @@ export default function JpgToPdf() {
       setProgress(100)
       setResult(pdfBlob)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to merge JPG to PDF')
+      setError(err instanceof Error ? err.message : t('jpgToPdf.mergeFailed'))
     } finally {
       setProcessing(false)
     }
@@ -125,7 +125,7 @@ export default function JpgToPdf() {
               <div key={i} className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden">
                 <img
                   src={img.url}
-                  alt={`Image ${i + 1}`}
+                  alt={t('jpgToPdf.image', { number: i + 1 })}
                   className="w-full h-32 object-cover"
                 />
                 <div className="p-2">

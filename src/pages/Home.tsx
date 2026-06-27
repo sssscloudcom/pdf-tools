@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Features Section */}
       <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Choose PDF Tools?</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('home.features.private.title').replace(/100% /, '')}{t('home.features.private.title').includes('Private') ? ' PDF Tools?' : ''}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="text-3xl mb-3">🔒</div>
@@ -82,20 +82,15 @@ export default function Home() {
 
       {/* SEO Content */}
       <div className="prose max-w-none">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Use PDF Tools</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('home.seo.howToUse')}</h2>
         <p className="text-gray-600 mb-4">
-          Our PDF and image tools are designed to be simple and intuitive. Just select the tool you need,
-          upload your file, and let our browser-based processor do the work. No software installation required.
+          {t('home.seo.p1')}
         </p>
         <p className="text-gray-600 mb-4">
-          Whether you need to compress a large PDF for email, convert images to PDF for documents,
-          or extract images from PDF files, our tools handle it all. All processing happens locally
-          in your browser, ensuring your files stay private and secure.
+          {t('home.seo.p2')}
         </p>
         <p className="text-gray-600">
-          PDF Tools works on all modern browsers including Chrome, Firefox, Safari, and Edge.
-          There are no file size limits or daily restrictions. Use our tools as much as you need,
-          completely free.
+          {t('home.seo.p3')}
         </p>
       </div>
     </div>

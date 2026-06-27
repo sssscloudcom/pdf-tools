@@ -150,11 +150,11 @@ export default function PdfToJpg() {
               <div key={i} className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden">
                 <img
                   src={page.url}
-                  alt={`Page ${i + 1}`}
+                  alt={t('pdfToJpg.page', { number: i + 1 })}
                   className="w-full h-40 object-cover"
                 />
                 <div className="p-3">
-                  <p className="text-sm font-medium text-gray-900 mb-2">Page {i + 1}</p>
+                  <p className="text-sm font-medium text-gray-900 mb-2">{t('pdfToJpg.page', { number: i + 1 })}</p>
                   <button
                     onClick={() => downloadPage(page)}
                     className="w-full px-3 py-1.5 bg-blue-50 text-blue-600 rounded hover:bg-blue-100 transition text-sm font-medium"

@@ -1,57 +1,53 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Privacy() {
+  const { t } = useTranslation()
+
   return (
     <div className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t('legal.privacy.title')}</h1>
       
       <div className="prose max-w-none">
         <p className="text-gray-600 mb-4">
-          <strong>Last updated:</strong> June 24, 2026
+          <strong>{t('legal.privacy.updated', { date: 'June 24, 2026' })}</strong>
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Browser-Based Processing</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s1Title')}</h2>
         <p className="text-gray-600 mb-4">
-          All file processing on PDF Tools happens entirely within your web browser. Your files are never
-          uploaded to our servers or any third-party servers. This means your documents and images remain
-          completely private and secure on your own device.
+          {t('legal.privacy.s1Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. No Data Collection</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s2Title')}</h2>
         <p className="text-gray-600 mb-4">
-          We do not collect, store, or transmit any of your files or personal data. When you use our tools,
-          the processing occurs locally on your device using JavaScript libraries. Once you close your browser
-          tab or navigate away from the page, all processed data is automatically cleared from memory.
+          {t('legal.privacy.s2Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Analytics</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s3Title')}</h2>
         <p className="text-gray-600 mb-4">
-          We may use Google Analytics to collect anonymous usage statistics (such as page views and tool usage)
-          to improve our service. This data does not include any personal information or file content.
+          {t('legal.privacy.s3Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Cookies</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s4Title')}</h2>
         <p className="text-gray-600 mb-4">
-          We use cookies solely for remembering your preferences (such as language settings) and for analytics
-          purposes. No cookies are used to track your files or processing activities.
+          {t('legal.privacy.s4Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Third-Party Services</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s5Title')}</h2>
         <p className="text-gray-600 mb-4">
-          We may display advertisements through Google AdSense. These ads may use cookies to provide relevant
-          advertising. For more information, please see Google's Privacy Policy.
+          {t('legal.privacy.s5Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Security</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s6Title')}</h2>
         <p className="text-gray-600 mb-4">
-          Since all processing happens locally in your browser, your files are protected by your device's
-          security measures. We recommend using an up-to-date browser with the latest security patches.
+          {t('legal.privacy.s6Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Contact</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.privacy.s7Title')}</h2>
         <p className="text-gray-600 mb-4">
-          If you have any questions about this Privacy Policy, please contact us at:
+          {t('legal.privacy.s7Desc')}
         </p>
         <p className="text-gray-600">
-          Email: contact@nextapi.pro
+          {t('legal.privacy.email')}
         </p>
       </div>
     </div>

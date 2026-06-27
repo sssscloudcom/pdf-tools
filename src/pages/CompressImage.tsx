@@ -19,9 +19,9 @@ export default function CompressImage() {
       setError(null)
       setResult(null)
     } else {
-      setError('Please select a valid image (JPEG, PNG, or WebP)')
+      setError(t('error.invalidImage'))
     }
-  }, [])
+  }, [t])
 
   const compressImage = async () => {
     if (!file) return
@@ -47,7 +47,7 @@ export default function CompressImage() {
         blob: compressedBlob,
       })
     } catch (err) {
-      setError(err instanceof Error ? err.message : t('common.error') + ': ' + t('tools.compressImage.title'))
+      setError(err instanceof Error ? err.message : t('common.error'))
     } finally {
       setProcessing(false)
     }
@@ -78,9 +78,9 @@ export default function CompressImage() {
     <div className="max-w-3xl mx-auto">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Compress Image</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('compressImage.title')}</h1>
         <p className="text-gray-600">
-          Reduce image file size for JPEG, PNG, and WebP. All processing happens in your browser.
+          {t('compressImage.description')}
         </p>
       </div>
 
@@ -91,7 +91,7 @@ export default function CompressImage() {
       {!result && (
         <div className="mt-6 bg-white rounded-lg p-4 border border-gray-200">
           <label className="block text-sm text-gray-700 mb-2">
-            Quality: {Math.round(quality * 100)}%
+            {t('compressImage.quality', { value: Math.round(quality * 100) })}
           </label>
           <input
             type="range"
@@ -104,10 +104,11 @@ export default function CompressImage() {
             disabled={processing}
           />
           <div className="flex justify-between text-xs text-gray-500 mt-1">
-            <span>Smaller file</span>
-            <span>Better quality</span>
+            <span>{t('compressImage.smallerFile')}</span>
+            <span>{t('compressImage.betterQuality')}</span>
           </div>
-          <p className="text-xs text-gray-400 mt-2">\            Tip: Select an image to start compression. Max file size: 50MB
+          <p className="text-xs text-gray-400 mt-2">
+            {t('pdfToJpg.tip')}
           </p>
         </div>
       )}
@@ -133,7 +134,7 @@ export default function CompressImage() {
             disabled={processing}
             className="btn-primary w-full px-6 py-3 rounded-lg text-white font-medium disabled:opacity-50"
           >
-            {processing ? t('common.processing') : t('tools.compressImage.title')}
+            {processing ? t('common.processing') : t('compressImage.compress')}
           </button>
 
           {/* Progress Bar */}
@@ -163,28 +164,28 @@ export default function CompressImage() {
         <div className="mt-6 bg-green-50 border border-green-200 rounded-lg p-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-green-800">Compression Complete!</h3>
-              <p className="text-green-600 text-sm">File size reduced by {compressionRatio}%</p>
+              <h3 className="text-lg font-semibold text-green-800">{t('compressImage.result.title')}</h3>
+              <p className="text-green-600 text-sm">{t('compressImage.result.saved', { ratio: compressionRatio })}</p>
             </div>
             <button
               onClick={downloadResult}
               className="btn-primary px-6 py-2 rounded-lg text-white font-medium"
             >
-              Download Compressed Image
+              {t('compressImage.result.download')}
             </button>
           </div>
           
           <div className="grid grid-cols-3 gap-4 text-center">
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Original Size</p>
+              <p className="text-sm text-gray-500">{t('compressImage.result.originalSize')}</p>
               <p className="text-lg font-semibold text-gray-900">{formatSize(result.originalSize)}</p>
             </div>
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Compressed Size</p>
+              <p className="text-sm text-gray-500">{t('compressImage.result.compressedSize')}</p>
               <p className="text-lg font-semibold text-green-600">{formatSize(result.compressedSize)}</p>
             </div>
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Saved</p>
+              <p className="text-sm text-gray-500">{t('compressImage.result.savedLabel')}</p>
               <p className="text-lg font-semibold text-green-600">{compressionRatio}%</p>
             </div>
           </div>
@@ -196,28 +197,22 @@ export default function CompressImage() {
             }}
             className="mt-4 text-sm text-gray-600 hover:text-gray-900 underline"
           >
-            Compress another image
+            {t('compressImage.result.another')}
           </button>
         </div>
       )}
 
       {/* SEO Content */}
       <div className="mt-12 prose max-w-none">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Compress Images</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('compressImage.seo.title')}</h2>
         <p className="text-gray-600 mb-4">
-          Our image compressor works entirely in your browser, processing JPEG, PNG, and WebP images
-          locally without uploading them to any server. This ensures maximum privacy and provides
-          fast compression results.
+          {t('compressImage.seo.p1')}
         </p>
         <p className="text-gray-600 mb-4">
-          You can adjust the quality slider to balance between file size and image quality. Higher
-          quality means larger files but better visual appearance, while lower quality results in
-          smaller files with some visual degradation.
+          {t('compressImage.seo.p2')}
         </p>
         <p className="text-gray-600">
-          This tool is perfect for optimizing images for websites, reducing file sizes for email
-          attachments, or saving storage space. There are no limits on file size or number of
-          compressions you can perform.
+          {t('compressImage.seo.p3')}
         </p>
       </div>
     </div>

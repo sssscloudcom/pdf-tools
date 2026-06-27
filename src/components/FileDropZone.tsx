@@ -1,4 +1,5 @@
 import { useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface FileDropZoneProps {
   onDrop: (files: File[]) => void
@@ -6,6 +7,8 @@ interface FileDropZoneProps {
 }
 
 export default function FileDropZone({ onDrop, accept }: FileDropZoneProps) {
+  const { t } = useTranslation()
+
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
     const files = Array.from(e.dataTransfer.files)
@@ -49,10 +52,10 @@ export default function FileDropZone({ onDrop, accept }: FileDropZoneProps) {
       </svg>
       
       <p className="text-lg text-gray-700 mb-2">
-        Drag and drop your file here
+        {t('compressPdf.dropzone.title')}
       </p>
       <p className="text-sm text-gray-500">
-        or click to browse from your device
+        {t('compressPdf.dropzone.subtitle')}
       </p>
     </div>
   )

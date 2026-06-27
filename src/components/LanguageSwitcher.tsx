@@ -15,7 +15,7 @@ const languages = [
 ]
 
 export default function LanguageSwitcher() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -42,7 +42,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition"
-        aria-label="Change language"
+        aria-label={t('common.changeLanguage')}
       >
         <span className="text-base">{currentLang.flag}</span>
         <span className="hidden sm:inline">{currentLang.name}</span>

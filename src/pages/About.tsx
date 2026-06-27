@@ -1,55 +1,56 @@
+import { useTranslation } from 'react-i18next'
+
 export default function About() {
+  const { t } = useTranslation()
+
   return (
     <div className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">About PDF Tools</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t('legal.about.title')}</h1>
       
       <div className="prose max-w-none">
         <p className="text-gray-600 mb-4">
-          PDF Tools is a free online platform that provides easy-to-use PDF and image processing tools.
-          Our mission is to make document management accessible to everyone, without compromising privacy or security.
+          {t('legal.about.p1')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Philosophy</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.about.philosophy')}</h2>
         <p className="text-gray-600 mb-4">
-          We believe that file processing tools should be:
+          {t('legal.about.philosophyDesc')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li><strong>Private</strong> - Your files should never leave your device</li>
-          <li><strong>Free</strong> - Essential tools should be available to everyone</li>
-          <li><strong>Easy</strong> - No technical knowledge required</li>
-          <li><strong>Fast</strong> - Instant processing without upload delays</li>
+          <li><strong>{t('legal.about.private')}</strong></li>
+          <li><strong>{t('legal.about.free')}</strong></li>
+          <li><strong>{t('legal.about.easy')}</strong></li>
+          <li><strong>{t('legal.about.fast')}</strong></li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How It Works</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.about.howItWorks')}</h2>
         <p className="text-gray-600 mb-4">
-          Unlike traditional online tools that upload your files to remote servers, PDF Tools processes everything
-          locally in your web browser. We use modern JavaScript libraries (like pdf-lib and Mozilla's PDF.js)
-          to handle PDF manipulation directly on your device.
+          {t('legal.about.howItWorksP1')}
         </p>
         <p className="text-gray-600 mb-4">
-          This approach has several advantages:
+          {t('legal.about.howItWorksP2')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li>No upload time - processing starts immediately</li>
-          <li>No server costs - we can keep the service free</li>
-          <li>No data breaches - your files never leave your device</li>
-          <li>Works offline - once loaded, tools work without internet</li>
+          <li>{t('legal.about.adv1')}</li>
+          <li>{t('legal.about.adv2')}</li>
+          <li>{t('legal.about.adv3')}</li>
+          <li>{t('legal.about.adv4')}</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Available Tools</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.about.availableTools')}</h2>
         <p className="text-gray-600 mb-4">
           Currently, we offer the following tools:
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li>PDF Compressor - Reduce PDF file size</li>
-          <li>Image Compressor - Compress JPEG, PNG, WebP images</li>
-          <li>PDF to JPG (coming soon)</li>
-          <li>JPG to PDF (coming soon)</li>
+          <li>{t('legal.about.tool1')}</li>
+          <li>{t('legal.about.tool2')}</li>
+          <li>{t('legal.about.tool3')}</li>
+          <li>{t('legal.about.tool4')}</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contact</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('footer.about')}</h2>
         <p className="text-gray-600">
-          Have suggestions or feedback? Email us at: contact@nextapi.pro
+          {t('legal.about.contact')}
         </p>
       </div>
     </div>

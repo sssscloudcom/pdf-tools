@@ -1,73 +1,71 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Terms() {
+  const { t } = useTranslation()
+
   return (
     <div className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms of Service</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">{t('legal.terms.title')}</h1>
       
       <div className="prose max-w-none">
         <p className="text-gray-600 mb-4">
-          <strong>Last updated:</strong> June 24, 2026
+          <strong>{t('legal.terms.updated', { date: 'June 24, 2026' })}</strong>
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s1Title')}</h2>
         <p className="text-gray-600 mb-4">
-          By accessing and using PDF Tools, you agree to be bound by these Terms of Service and all applicable
-          laws and regulations. If you do not agree with any of these terms, you are prohibited from using
-          or accessing this site.
+          {t('legal.terms.s1Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Use License</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s2Title')}</h2>
         <p className="text-gray-600 mb-4">
-          Permission is granted to temporarily use PDF Tools for personal, non-commercial purposes. This is
-          the grant of a license, not a transfer of title, and under this license you may not:
+          {t('legal.terms.s2Desc')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li>Modify or copy the website's source code</li>
-          <li>Use the service for any commercial purpose without permission</li>
-          <li>Attempt to reverse engineer any software contained on the website</li>
-          <li>Remove any copyright or proprietary notations</li>
+          <li>{t('legal.terms.license1')}</li>
+          <li>{t('legal.terms.license2')}</li>
+          <li>{t('legal.terms.license3')}</li>
+          <li>{t('legal.terms.license4')}</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Disclaimer</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s3Title')}</h2>
         <p className="text-gray-600 mb-4">
-          PDF Tools is provided "as is" without any warranties, expressed or implied. We do not warrant that:
+          {t('legal.terms.s3Desc')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li>The service will be uninterrupted or error-free</li>
-          <li>The results from using the service will be accurate or reliable</li>
-          <li>The quality of any products, services, or information will meet your expectations</li>
+          <li>{t('legal.terms.disclaimer1')}</li>
+          <li>{t('legal.terms.disclaimer2')}</li>
+          <li>{t('legal.terms.disclaimer3')}</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Limitations</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s4Title')}</h2>
         <p className="text-gray-600 mb-4">
-          In no event shall PDF Tools or its operators be liable for any damages arising out of the use or
-          inability to use the service, even if we have been notified of the possibility of such damages.
+          {t('legal.terms.s4Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. User Responsibilities</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s5Title')}</h2>
         <p className="text-gray-600 mb-4">
-          You are responsible for:
+          {t('legal.terms.s5Desc')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
-          <li>Ensuring you have the right to process any files you upload</li>
-          <li>Not using the service for illegal or harmful purposes</li>
-          <li>Maintaining the security of your own device and browser</li>
+          <li>{t('legal.terms.resp1')}</li>
+          <li>{t('legal.terms.resp2')}</li>
+          <li>{t('legal.terms.resp3')}</li>
         </ul>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Modifications</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s6Title')}</h2>
         <p className="text-gray-600 mb-4">
-          We reserve the right to modify or discontinue the service at any time without notice. We shall not
-          be liable to you or any third party for any modification, suspension, or discontinuance of the service.
+          {t('legal.terms.s6Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Governing Law</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s7Title')}</h2>
         <p className="text-gray-600 mb-4">
-          These terms and conditions are governed by and construed in accordance with applicable laws, and you
-          irrevocably submit to the exclusive jurisdiction of the courts in that location.
+          {t('legal.terms.s7Desc')}
         </p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Contact</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.terms.s8Title')}</h2>
         <p className="text-gray-600">
-          Questions about the Terms of Service should be sent to: contact@nextapi.pro
+          {t('legal.terms.s8Desc')}
         </p>
       </div>
     </div>

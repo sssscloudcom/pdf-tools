@@ -17,9 +17,9 @@ export default function CompressPdf() {
       setError(null)
       setResult(null)
     } else {
-      setError('Please select a valid PDF file')
+      setError(t('error.invalidPdf'))
     }
-  }, [])
+  }, [t])
 
   const compressPdf = async () => {
     if (!file) return
@@ -41,9 +41,8 @@ export default function CompressPdf() {
       setProgress(40)
 
       // Compress by saving with optimization
-      // Note: pdf-lib doesn't have built-in compression, but we can optimize the PDF structure
       const compressedBytes = await pdfDoc.save({
-        useObjectStreams: true, // More compact storage
+        useObjectStreams: true,
       })
       setProgress(80)
 
@@ -53,7 +52,7 @@ export default function CompressPdf() {
       setProgress(100)
       setResult({ originalSize, compressedSize, blob })
     } catch (err) {
-      setError(err instanceof Error ? err.message : t('common.error') + ': ' + t('tools.compressPdf.title'))
+      setError(err instanceof Error ? err.message : t('common.error'))
     } finally {
       setProcessing(false)
     }
@@ -84,9 +83,9 @@ export default function CompressPdf() {
     <div className="max-w-3xl mx-auto">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Compress PDF</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t('compressPdf.title')}</h1>
         <p className="text-gray-600">
-          Reduce PDF file size while maintaining document quality. All processing happens in your browser.
+          {t('compressPdf.description')}
         </p>
       </div>
 
@@ -96,7 +95,7 @@ export default function CompressPdf() {
       {/* Tip */}
       {!result && (
         <div className="mt-4 text-center text-sm text-gray-500">
-          <p>Tip: Select a PDF file to start compression. Max file size: 50MB</p>
+          <p>{t('pdfToJpg.tip')}</p>
         </div>
       )}
 
@@ -118,7 +117,7 @@ export default function CompressPdf() {
               disabled={processing}
               className="btn-primary px-6 py-2 rounded-lg text-white font-medium disabled:opacity-50"
             >
-              {processing ? t('common.processing') : t('tools.compressPdf.title')}
+              {processing ? t('common.processing') : t('compressPdf.compress')}
             </button>
           </div>
 
@@ -149,28 +148,28 @@ export default function CompressPdf() {
         <div className="mt-6 bg-green-50 border border-green-200 rounded-lg p-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-green-800">Compression Complete!</h3>
-              <p className="text-green-600 text-sm">File size reduced by {compressionRatio}%</p>
+              <h3 className="text-lg font-semibold text-green-800">{t('compressPdf.result.title')}</h3>
+              <p className="text-green-600 text-sm">{t('compressPdf.result.saved', { ratio: compressionRatio })}</p>
             </div>
             <button
               onClick={downloadResult}
               className="btn-primary px-6 py-2 rounded-lg text-white font-medium"
             >
-              Download Compressed PDF
+              {t('compressPdf.result.download')}
             </button>
           </div>
           
           <div className="grid grid-cols-3 gap-4 text-center">
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Original Size</p>
+              <p className="text-sm text-gray-500">{t('compressPdf.result.originalSize')}</p>
               <p className="text-lg font-semibold text-gray-900">{formatSize(result.originalSize)}</p>
             </div>
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Compressed Size</p>
+              <p className="text-sm text-gray-500">{t('compressPdf.result.compressedSize')}</p>
               <p className="text-lg font-semibold text-green-600">{formatSize(result.compressedSize)}</p>
             </div>
             <div className="bg-white rounded-lg p-4">
-              <p className="text-sm text-gray-500">Saved</p>
+              <p className="text-sm text-gray-500">{t('compressPdf.result.savedLabel')}</p>
               <p className="text-lg font-semibold text-green-600">{compressionRatio}%</p>
             </div>
           </div>
@@ -182,27 +181,22 @@ export default function CompressPdf() {
             }}
             className="mt-4 text-sm text-gray-600 hover:text-gray-900 underline"
           >
-            Compress another PDF
+            {t('compressPdf.result.another')}
           </button>
         </div>
       )}
 
       {/* SEO Content */}
       <div className="mt-12 prose max-w-none">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Compress PDF Files</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('compressPdf.seo.title')}</h2>
         <p className="text-gray-600 mb-4">
-          Our PDF compressor works entirely in your browser, processing your files locally without uploading
-          them to any server. This ensures maximum privacy and security while providing fast compression results.
+          {t('compressPdf.seo.p1')}
         </p>
         <p className="text-gray-600 mb-4">
-          The compression process optimizes the PDF structure by removing redundant data, consolidating
-          resources, and using more efficient storage methods. Your document's visual quality remains intact
-          while the file size is reduced.
+          {t('compressPdf.seo.p2')}
         </p>
         <p className="text-gray-600">
-          This tool is perfect for reducing large PDF files for email attachments, optimizing documents for
-          web upload, or saving storage space on your device. There are no file size limits or watermarks
-          added to your documents.
+          {t('compressPdf.seo.p3')}
         </p>
       </div>
     </div>
