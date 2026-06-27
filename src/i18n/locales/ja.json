@@ -24,7 +24,8 @@
       "free": {
         "title": "完全無料",
         "desc": "ファイル制限なし、透かしなし、登録不要。"
-      }
+      },
+      "title": "なぜ PDF Tools を選ぶのか？"
     },
     "seo": {
       "howToUse": "How to Use PDF Tools",
@@ -197,7 +198,8 @@
       "tool2": "画像圧縮 - JPEG、PNG、WebP画像を圧縮",
       "tool3": "PDF→JPG（近日公開）",
       "tool4": "JPG→PDF（近日公開）",
-      "contact": "ご提案やフィードバックがありますか？メールでお問い合わせください: contact@nextapi.pro"
+      "contact": "ご提案やフィードバックがありますか？メールでお問い合わせください: contact@nextapi.pro",
+      "availableToolsDesc": "現在、以下のツールを提供しています："
     },
     "terms": {
       "title": "利用規約",

@@ -39,7 +39,7 @@ export default function About() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">{t('legal.about.availableTools')}</h2>
         <p className="text-gray-600 mb-4">
-          Currently, we offer the following tools:
+          {t('legal.about.availableToolsDesc')}
         </p>
         <ul className="list-disc list-inside text-gray-600 mb-4">
           <li>{t('legal.about.tool1')}</li>

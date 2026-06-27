@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* Features Section */}
       <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('home.features.private.title').replace(/100% /, '')}{t('home.features.private.title').includes('Private') ? ' PDF Tools?' : ''}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('home.features.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="text-3xl mb-3">🔒</div>

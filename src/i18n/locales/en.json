@@ -25,7 +25,8 @@
       "free": {
         "title": "Completely Free",
         "desc": "No file limits, no watermarks, no registration required."
-      }
+      },
+      "title": "Why Choose PDF Tools?"
     },
     "seo": {
       "howToUse": "How to Use PDF Tools",
@@ -198,7 +199,8 @@
       "tool2": "Image Compressor - Compress JPEG, PNG, WebP images",
       "tool3": "PDF to JPG (coming soon)",
       "tool4": "JPG to PDF (coming soon)",
-      "contact": "Have suggestions or feedback? Email us at: contact@nextapi.pro"
+      "contact": "Have suggestions or feedback? Email us at: contact@nextapi.pro",
+      "availableToolsDesc": "Currently, we offer the following tools:"
     },
     "terms": {
       "title": "Terms of Service",

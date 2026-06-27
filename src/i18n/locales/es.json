@@ -24,7 +24,8 @@
       "free": {
         "title": "Completamente Gratis",
         "desc": "Sin límites de archivos, sin marcas de agua, no requiere registro."
-      }
+      },
+      "title": "¿Por qué elegir PDF Tools?"
     },
     "seo": {
       "howToUse": "How to Use PDF Tools",
@@ -197,7 +198,8 @@
       "tool2": "Compresor de Imágenes - Comprime imágenes JPEG, PNG, WebP",
       "tool3": "PDF a JPG (próximamente)",
       "tool4": "JPG a PDF (próximamente)",
-      "contact": "¿Tienes sugerencias o comentarios? Envíanos un correo a: contact@nextapi.pro"
+      "contact": "¿Tienes sugerencias o comentarios? Envíanos un correo a: contact@nextapi.pro",
+      "availableToolsDesc": "Actualmente, ofrecemos las siguientes herramientas:"
     },
     "terms": {
       "title": "Términos de Servicio",

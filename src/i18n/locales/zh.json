@@ -24,7 +24,8 @@
       "free": {
         "title": "完全免费",
         "desc": "无文件限制、无水印、无需注册。"
-      }
+      },
+      "title": "为什么选择 PDF Tools？"
     },
     "seo": {
       "howToUse": "How to Use PDF Tools",
@@ -197,7 +198,8 @@
       "tool2": "图片压缩器 - 压缩JPEG、PNG、WebP图片",
       "tool3": "PDF转JPG（即将推出）",
       "tool4": "JPG转PDF（即将推出）",
-      "contact": "有建议或反馈？给我们发电子邮件：contact@nextapi.pro"
+      "contact": "有建议或反馈？给我们发电子邮件：contact@nextapi.pro",
+      "availableToolsDesc": "目前，我们提供以下工具："
     },
     "terms": {
       "title": "服务条款",
