@@ -28,10 +28,10 @@
       "title": "Por que escolher PDF Tools?"
     },
     "seo": {
-      "howToUse": "How to Use PDF Tools",
-      "p1": "Our PDF and image tools are designed to be simple and intuitive. Just select the tool you need, upload your file, and let our browser-based processor do the work. No software installation required.",
-      "p2": "Whether you need to compress a large PDF for email, convert images to PDF for documents, or extract images from PDF files, our tools handle it all. All processing happens locally in your browser, ensuring your files stay private and secure.",
-      "p3": "PDF Tools works on all modern browsers including Chrome, Firefox, Safari, and Edge. There are no file size limits or daily restrictions. Use our tools as much as you need, completely free."
+      "howToUse": "Como usar PDF Tools",
+      "p1": "Nossas ferramentas PDF e imagem são projetadas para ser simples e intuitivas. Selecione a ferramenta necessária, carregue seu arquivo e deixe nosso processador baseado em navegador fazer o trabalho. Não requer instalação de software.",
+      "p2": "Seja para comprimir um PDF grande para e-mail, converter imagens em documentos PDF ou extrair imagens de arquivos PDF, nossas ferramentas lidam com tudo. Todo processamento acontece localmente no navegador, garantindo que seus arquivos permaneçam privados e seguros.",
+      "p3": "PDF Tools funciona em todos os navegadores modernos incluindo Chrome, Firefox, Safari e Edge. Não há limite de tamanho de arquivo ou restrições diárias. Use nossas ferramentas tanto quanto precisar, completamente grátis."
     }
   },
   "tools": {
