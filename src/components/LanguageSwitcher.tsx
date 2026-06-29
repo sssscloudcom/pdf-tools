@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { useState, useRef, useEffect } from 'react'
 
 const languages = [
@@ -16,6 +17,8 @@ const languages = [
 
 export default function LanguageSwitcher() {
   const { i18n, t } = useTranslation()
+  const navigate = useNavigate()
+  const location = useLocation()
   const [isOpen, setIsOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -23,6 +26,13 @@ export default function LanguageSwitcher() {
 
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code)
+    
+    // Update URL path
+    const currentPath = location.pathname
+    const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '')
+    const newPath = `/${code}${pathWithoutLang}`
+    
+    navigate(newPath)
     setIsOpen(false)
   }
 

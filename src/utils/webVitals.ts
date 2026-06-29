@@ -1,13 +1,12 @@
-import { onLCP, onFID, onCLS } from 'web-vitals'
+import { onLCP, onINP, onCLS } from 'web-vitals'
 
 export function initWebVitals() {
   onLCP((metric) => {
     console.log('LCP:', metric)
-    // Send to analytics
   })
   
-  onFID((metric) => {
-    console.log('FID:', metric)
+  onINP((metric) => {
+    console.log('INP:', metric) // FID deprecated, use INP
   })
   
   onCLS((metric) => {

@@ -1,94 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- English -->
   <url>
-    <loc>https://pdftools.nextapi.pro/</loc>
+    <loc>https://pdftools.nextapi.pro/en</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/ja"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pdftools.nextapi.pro/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdftools.nextapi.pro/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/?lang=ar"/>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/compress-pdf</loc>
+    <loc>https://pdftools.nextapi.pro/en/compress-pdf</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdftools.nextapi.pro/compress-pdf?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/compress-pdf?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/compress-pdf?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/compress-pdf?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/compress-pdf?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/compress-pdf?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/compress-pdf?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/compress-pdf?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/compress-pdf?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/compress-pdf?lang=ar"/>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/compress-image</loc>
+    <loc>https://pdftools.nextapi.pro/en/compress-image</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdftools.nextapi.pro/compress-image?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/compress-image?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/compress-image?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/compress-image?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/compress-image?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/compress-image?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/compress-image?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/compress-image?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/compress-image?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/compress-image?lang=ar"/>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/pdf-to-jpg</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://pdftools.nextapi.pro/en/pdf-to-jpg</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://pdftools.nextapi.pro/en/jpg-to-pdf</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Chinese -->
+  <url>
+    <loc>https://pdftools.nextapi.pro/zh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pdftools.nextapi.pro/zh/compress-pdf</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Other languages (similar structure) -->
+  <url>
+    <loc>https://pdftools.nextapi.pro/es</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/pdf-to-jpg?lang=ar"/>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/jpg-to-pdf</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://pdftools.nextapi.pro/de</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://pdftools.nextapi.pro/jpg-to-pdf?lang=ar"/>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/privacy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://pdftools.nextapi.pro/ja</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://pdftools.nextapi.pro/fr</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+  
   <url>
-    <loc>https://pdftools.nextapi.pro/terms</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://pdftools.nextapi.pro/ru</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
+  
+  <url>
+    <loc>https://pdftools.nextapi.pro/pt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://pdftools.nextapi.pro/id</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://pdftools.nextapi.pro/ar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
