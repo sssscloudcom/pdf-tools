@@ -1,5 +1,6 @@
+import { Helmet } from 'react-helmet-async'
 import type { ReactNode } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
 
@@ -12,25 +13,49 @@ const supportedLanguages = ['en', 'zh', 'es', 'de', 'ja', 'fr', 'ru', 'pt', 'id'
 export default function Layout({ children }: LayoutProps) {
   const { t, i18n } = useTranslation()
   const { lang } = useParams()
+  const location = useLocation()
   const currentLang = lang || i18n.language.split('-')[0] || 'en'
   
-  // Generate hreflang tags
-  const getHreflangUrl = (targetLang: string, path: string = '') => {
-    return `https://pdftools.nextapi.pro/${targetLang}${path}`
+  // Get current path without language prefix
+  const pathWithoutLang = location.pathname.replace(/^\/[a-z]{2}/, '') || ''
+  
+  // Generate hreflang URLs with path
+  const getHreflangUrl = (targetLang: string) => {
+    return `https://pdftools.nextapi.pro/${targetLang}${pathWithoutLang}`
   }
+  
+  // Get page title and description based on current route
+  const getPageMeta = () => {
+    const path = pathWithoutLang || '/home'
+    const title = t('site.title')
+    const description = t('site.description')
+    return { title, description }
+  }
+  
+  const { title, description } = getPageMeta()
   
   return (
     <>
-      {/* Hreflang tags for SEO */}
-      {supportedLanguages.map(l => (
-        <link 
-          key={l}
-          rel="alternate" 
-          hrefLang={l} 
-          href={getHreflangUrl(l)} 
-        />
-      ))}
-      <link rel="alternate" hrefLang="x-default" href="https://pdftools.nextapi.pro/" />
+      <Helmet>
+        {/* Dynamic Meta Tags */}
+        <html lang={currentLang} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={`https://pdftools.nextapi.pro${location.pathname}`} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href={`https://pdftools.nextapi.pro${location.pathname}`} />
+        
+        {/* Hreflang Tags - Updated to use path mode */}
+        {supportedLanguages.map(l => (
+          <link key={l} rel="alternate" hrefLang={l} href={getHreflangUrl(l)} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={`https://pdftools.nextapi.pro/en${pathWithoutLang}`} />
+      </Helmet>
     
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
@@ -56,8 +81,7 @@ export default function Layout({ children }: LayoutProps) {
           {/* Header Ad Banner (Desktop only) */}
           <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
             <div className="ad-header bg-gray-100 rounded-lg p-2 text-center text-sm text-gray-500">
-              {/* Google AdSense will be inserted here when approved */}
-              {/* <AdSlot slot="header-banner" format="horizontal" /> */}
+              Advertisement
             </div>
           </div>
         </header>
@@ -76,8 +100,6 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="text-center text-sm text-gray-500 mb-2">
                   Advertisement
                 </div>
-                {/* Google AdSense will be inserted here when approved */}
-                {/* <AdSlot slot="sidebar-rectangle" format="rectangle" /> */}
                 <div className="h-64 bg-gray-200 rounded"></div>
               </div>
             </aside>
@@ -88,8 +110,7 @@ export default function Layout({ children }: LayoutProps) {
         <div className="bg-gray-100 py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="ad-footer bg-white rounded-lg p-3 text-center text-sm text-gray-500">
-              {/* Google AdSense will be inserted here when approved */}
-              {/* <AdSlot slot="footer-banner" format="horizontal" /> */}
+              Advertisement
             </div>
           </div>
         </div>
