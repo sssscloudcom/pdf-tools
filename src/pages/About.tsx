@@ -52,6 +52,29 @@ export default function About() {
         <p className="text-gray-600">
           {t('legal.about.contact')}
         </p>
+        
+        {/* Copyright Section */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Copyright & License</h2>
+          <p className="text-gray-600 mb-2">
+            © {new Date().getFullYear()} PDF Tools. All rights reserved.
+          </p>
+          <p className="text-gray-600 text-sm">
+            This project is open source and available at: 
+            <a 
+              href="https://github.com/sssscloudcom/pdf-tools" 
+              className="text-blue-600 hover:text-blue-800 ml-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repository
+            </a>
+          </p>
+          <p className="text-gray-500 text-sm mt-2">
+            Built with React, Vite, Tailwind CSS, and pdf-lib. 
+            Hosted on Cloudflare Pages.
+          </p>
+        </div>
       </div>
     </div>
   )
