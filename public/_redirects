@@ -1,19 +1,44 @@
-# Cloudflare Pages 重定向规则
+# Cloudflare Pages 路由规则
 
-# 多语言路由 - 重定向到对应的语言文件夹
-/en/* /en/:splat 200
-/zh/* /zh/:splat 200
-/es/* /es/:splat 200
-/de/* /de/:splat 200
-/ja/* /ja/:splat 200
-/fr/* /fr/:splat 200
-/ru/* /ru/:splat 200
-/pt/* /pt/:splat 200
-/id/* /id/:splat 200
-/ar/* /ar/:splat 200
-
-# 根路径重定向到英文版本
-/ /en 301
-
-# 兼容旧的查询参数模式
-/?lang=* /:lang 301
+# 添加尾斜杠重定向（让 /zh/compress-pdf → /zh/compress-pdf/）
+# 这样 Cloudflare Pages 才能找到 /zh/compress-pdf/index.html
+/zh/compress-pdf /zh/compress-pdf/ 301
+/zh/compress-image /zh/compress-image/ 301
+/zh/pdf-to-jpg /zh/pdf-to-jpg/ 301
+/zh/jpg-to-pdf /zh/jpg-to-pdf/ 301
+/en/compress-pdf /en/compress-pdf/ 301
+/en/compress-image /en/compress-image/ 301
+/en/pdf-to-jpg /en/pdf-to-jpg/ 301
+/en/jpg-to-pdf /en/jpg-to-pdf/ 301
+/es/compress-pdf /es/compress-pdf/ 301
+/es/compress-image /es/compress-image/ 301
+/es/pdf-to-jpg /es/pdf-to-jpg/ 301
+/es/jpg-to-pdf /es/jpg-to-pdf/ 301
+/de/compress-pdf /de/compress-pdf/ 301
+/de/compress-image /de/compress-image/ 301
+/de/pdf-to-jpg /de/pdf-to-jpg/ 301
+/de/jpg-to-pdf /de/jpg-to-pdf/ 301
+/ja/compress-pdf /ja/compress-pdf/ 301
+/ja/compress-image /ja/compress-image/ 301
+/ja/pdf-to-jpg /ja/pdf-to-jpg/ 301
+/ja/jpg-to-pdf /ja/jpg-to-pdf/ 301
+/fr/compress-pdf /fr/compress-pdf/ 301
+/fr/compress-image /fr/compress-image/ 301
+/fr/pdf-to-jpg /fr/pdf-to-jpg/ 301
+/fr/jpg-to-pdf /fr/jpg-to-pdf/ 301
+/ru/compress-pdf /ru/compress-pdf/ 301
+/ru/compress-image /ru/compress-image/ 301
+/ru/pdf-to-jpg /ru/pdf-to-jpg/ 301
+/ru/jpg-to-pdf /ru/jpg-to-pdf/ 301
+/pt/compress-pdf /pt/compress-pdf/ 301
+/pt/compress-image /pt/compress-image/ 301
+/pt/pdf-to-jpg /pt/pdf-to-jpg/ 301
+/pt/jpg-to-pdf /pt/jpg-to-pdf/ 301
+/id/compress-pdf /id/compress-pdf/ 301
+/id/compress-image /id/compress-image/ 301
+/id/pdf-to-jpg /id/pdf-to-jpg/ 301
+/id/jpg-to-pdf /id/jpg-to-pdf/ 301
+/ar/compress-pdf /ar/compress-pdf/ 301
+/ar/compress-image /ar/compress-image/ 301
+/ar/pdf-to-jpg /ar/pdf-to-jpg/ 301
+/ar/jpg-to-pdf /ar/jpg-to-pdf/ 301
