@@ -19,20 +19,14 @@ export default function Layout({ children }: LayoutProps) {
   // Get current path without language prefix
   const pathWithoutLang = location.pathname.replace(/^\/[a-z]{2}/, '') || ''
   
-  // Generate hreflang URLs with path
+  // Generate hreflang URLs with path mode
   const getHreflangUrl = (targetLang: string) => {
     return `https://pdftools.nextapi.pro/${targetLang}${pathWithoutLang}`
   }
   
-  // Get page title and description based on current route
-  const getPageMeta = () => {
-    const path = pathWithoutLang || '/home'
-    const title = t('site.title')
-    const description = t('site.description')
-    return { title, description }
-  }
-  
-  const { title, description } = getPageMeta()
+  // Dynamic meta tags based on language
+  const title = t('site.title')
+  const description = t('site.description')
   
   return (
     <>
@@ -50,7 +44,7 @@ export default function Layout({ children }: LayoutProps) {
         {/* Canonical URL */}
         <link rel="canonical" href={`https://pdftools.nextapi.pro${location.pathname}`} />
         
-        {/* Hreflang Tags - Updated to use path mode */}
+        {/* Hreflang Tags - Path mode */}
         {supportedLanguages.map(l => (
           <link key={l} rel="alternate" hrefLang={l} href={getHreflangUrl(l)} />
         ))}
@@ -78,7 +72,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
           
-          {/* Header Ad Banner (Desktop only) */}
+          {/* Header Ad Banner */}
           <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
             <div className="ad-header bg-gray-100 rounded-lg p-2 text-center text-sm text-gray-500">
               Advertisement
@@ -86,32 +80,27 @@ export default function Layout({ children }: LayoutProps) {
           </div>
         </header>
 
-        {/* Main Content with Sidebar Ad */}
+        {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex gap-8">
-            {/* Main Content Area */}
             <div className="flex-1">
               {children}
             </div>
             
-            {/* Sidebar Ad (Desktop only) */}
+            {/* Sidebar Ad */}
             <aside className="hidden lg:block w-80">
               <div className="ad-sidebar bg-gray-100 rounded-lg p-4 sticky top-8">
-                <div className="text-center text-sm text-gray-500 mb-2">
-                  Advertisement
-                </div>
+                <div className="text-center text-sm text-gray-500 mb-2">Advertisement</div>
                 <div className="h-64 bg-gray-200 rounded"></div>
               </div>
             </aside>
           </div>
         </main>
 
-        {/* Footer Ad Banner (Mobile friendly) */}
+        {/* Footer Ad */}
         <div className="bg-gray-100 py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="ad-footer bg-white rounded-lg p-3 text-center text-sm text-gray-500">
-              Advertisement
-            </div>
+            <div className="ad-footer bg-white rounded-lg p-3 text-center text-sm text-gray-500">Advertisement</div>
           </div>
         </div>
 
@@ -121,9 +110,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <h3 className="font-semibold text-gray-900 mb-3">{t('footer.title')}</h3>
-                <p className="text-gray-600 text-sm">
-                  {t('footer.desc')}
-                </p>
+                <p className="text-gray-600 text-sm">{t('footer.desc')}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-3">{t('footer.tools')}</h3>
