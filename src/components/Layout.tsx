@@ -31,12 +31,47 @@ export default function Layout({ children }: LayoutProps) {
             <LanguageSwitcher />
           </div>
         </div>
+        
+        {/* Header Ad Banner (Desktop only) */}
+        <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+          <div className="ad-header bg-gray-100 rounded-lg p-2 text-center text-sm text-gray-500">
+            {/* Google AdSense will be inserted here when approved */}
+            {/* <AdSlot slot="header-banner" format="horizontal" /> */}
+          </div>
+        </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main Content with Sidebar Ad */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {children}
+        <div className="flex gap-8">
+          {/* Main Content Area */}
+          <div className="flex-1">
+            {children}
+          </div>
+          
+          {/* Sidebar Ad (Desktop only) */}
+          <aside className="hidden lg:block w-80">
+            <div className="ad-sidebar bg-gray-100 rounded-lg p-4 sticky top-8">
+              <div className="text-center text-sm text-gray-500 mb-2">
+                Advertisement
+              </div>
+              {/* Google AdSense will be inserted here when approved */}
+              {/* <AdSlot slot="sidebar-rectangle" format="rectangle" /> */}
+              <div className="h-64 bg-gray-200 rounded"></div>
+            </div>
+          </aside>
+        </div>
       </main>
+
+      {/* Footer Ad Banner (Mobile friendly) */}
+      <div className="bg-gray-100 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="ad-footer bg-white rounded-lg p-3 text-center text-sm text-gray-500">
+            {/* Google AdSense will be inserted here when approved */}
+            {/* <AdSlot slot="footer-banner" format="horizontal" /> */}
+          </div>
+        </div>
+      </div>
 
       {/* Footer */}
       <footer className="bg-white border-t border-gray-200 mt-auto">

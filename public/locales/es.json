@@ -1,0 +1,244 @@
+{
+  "site": {
+    "title": "PDF Tools - Compresor de PDF e Imágenes Gratis en Línea",
+    "description": "Herramientas gratuitas en línea para PDF e imágenes. Comprimir PDF, comprimir imágenes, convertir PDF a JPG y más. Procesamiento 100% en el navegador para privacidad y seguridad."
+  },
+  "nav": {
+    "compressPdf": "Compresor PDF",
+    "compressImage": "Compresor de Imágenes",
+    "pdfToJpg": "PDF a JPG",
+    "jpgToPdf": "JPG a PDF"
+  },
+  "home": {
+    "title": "Herramientas Gratuitas de PDF e Imágenes",
+    "subtitle": "Procesamiento 100% en el navegador. Tus archivos nunca salen de tu dispositivo. Rápido, seguro y completamente gratis.",
+    "features": {
+      "private": {
+        "title": "100% Privado",
+        "desc": "Todo el procesamiento ocurre en tu navegador. Tus archivos nunca salen de tu dispositivo."
+      },
+      "fast": {
+        "title": "Ultrarrápido",
+        "desc": "Sin tiempo de espera de carga. Procesa archivos instantáneamente en tu dispositivo."
+      },
+      "free": {
+        "title": "Completamente Gratis",
+        "desc": "Sin límites de archivos, sin marcas de agua, no requiere registro."
+      },
+      "title": "¿Por qué elegir PDF Tools?"
+    },
+    "seo": {
+      "howToUse": "Cómo usar PDF Tools",
+      "p1": "Nuestros herramientas PDF e imagen están diseñadas para ser simples e intuitivas. Solo seleccione la herramienta que necesita, cargue su archivo y permita que nuestro procesador basado en navegador haga el trabajo. No requiere instalación de software.",
+      "p2": "Ya sea que necesite comprimir un PDF grande para correo electrónico, convertir imágenes a PDF para documentos, o extraer imágenes de archivos PDF, nuestras herramientas manejan todo. Todo el procesamiento ocurre localmente en su navegador, asegurando que sus archivos permanezcan privados y seguros.",
+      "p3": "PDF Tools funciona en todos los navegadores modernos incluyendo Chrome, Firefox, Safari y Edge. No hay límites de tamaño de archivo ni restricciones diarias. Use nuestras herramientas tanto como necesite, completamente gratis."
+    }
+  },
+  "tools": {
+    "compressPdf": {
+      "title": "Comprimir PDF",
+      "desc": "Reduce el tamaño del archivo PDF manteniendo la calidad"
+    },
+    "compressImage": {
+      "title": "Comprimir Imagen",
+      "desc": "Comprime imágenes JPEG, PNG, WebP en línea"
+    },
+    "pdfToJpg": {
+      "title": "PDF a JPG",
+      "desc": "Convierte páginas PDF a imágenes JPG"
+    },
+    "jpgToPdf": {
+      "title": "JPG a PDF",
+      "desc": "Convierte imágenes a documento PDF"
+    }
+  },
+  "pdfToJpg": {
+    "title": "Convertidor de PDF a JPG",
+    "description": "Convierte páginas PDF a imágenes JPG de alta calidad. Procesamiento 100% en el navegador para tu privacidad.",
+    "tip": "Consejo: Selecciona un archivo PDF para convertir. Tamaño máximo: 50MB",
+    "convert": "Convertir a JPG",
+    "processing": "Convirtiendo PDF a JPG...",
+    "download": "Descargar",
+    "downloadAll": "Descargar Todo",
+    "another": "Convertir otro PDF",
+    "result": {
+      "title": "¡Conversión Completada! {{count}} páginas convertidas",
+      "pages": "{{count}} páginas"
+    },
+    "page": "Page {{number}}"
+  },
+  "jpgToPdf": {
+    "title": "Convertidor de JPG a PDF",
+    "description": "Combina múltiples imágenes JPG/PNG en un solo documento PDF. Procesamiento 100% en el navegador.",
+    "tip": "Consejo: Selecciona múltiples imágenes para combinar. Soporta JPG y PNG. Máximo 50MB por archivo.",
+    "merge": "Combinar a PDF",
+    "processing": "Combinando imágenes a PDF...",
+    "download": "Descargar PDF",
+    "another": "Combinar otro",
+    "imagesSelected": "{{count}} imágenes seleccionadas",
+    "result": {
+      "title": "¡Combinación Completada!",
+      "pages": "PDF creado con {{count}} páginas"
+    },
+    "image": "Image {{number}}",
+    "mergeFailed": "Failed to merge JPG to PDF"
+  },
+  "common": {
+    "clear": "Limpiar",
+    "processing": "Procesando...",
+    "compress": "Comprimir",
+    "download": "Descargar",
+    "copied": "¡Copiado!",
+    "copy": "Copiar",
+    "error": "Error",
+    "changeLanguage": "Change language"
+  },
+  "compressPdf": {
+    "title": "Comprimir PDF",
+    "description": "Reduce el tamaño del archivo PDF manteniendo la calidad del documento. Todo el procesamiento ocurre en tu navegador.",
+    "dropzone": {
+      "title": "Arrastra y suelta tu archivo aquí",
+      "subtitle": "o haz clic para buscar en tu dispositivo"
+    },
+    "quality": "Calidad",
+    "compress": "Comprimir PDF",
+    "processing": "Procesando...",
+    "result": {
+      "title": "¡Compresión Completada!",
+      "saved": "Tamaño reducido en {{ratio}}%",
+      "originalSize": "Tamaño Original",
+      "compressedSize": "Tamaño Comprimido",
+      "savedLabel": "Ahorrado",
+      "download": "Descargar PDF Comprimido",
+      "another": "Comprimir otro PDF"
+    },
+    "seo": {
+      "title": "Cómo Comprimir Archivos PDF",
+      "p1": "Nuestro compresor de PDF funciona completamente en tu navegador, procesando tus archivos localmente sin subirlos a ningún servidor. Esto garantiza máxima privacidad y seguridad mientras proporciona resultados de compresión rápidos.",
+      "p2": "El proceso de compresión optimiza la estructura del PDF eliminando datos redundantes, consolidando recursos y usando métodos de almacenamiento más eficientes. La calidad visual de tu documento permanece intacta mientras se reduce el tamaño del archivo.",
+      "p3": "Esta herramienta es perfecta para reducir archivos PDF grandes para adjuntos de correo electrónico, optimizar documentos para carga web o ahorrar espacio de almacenamiento en tu dispositivo. No hay límites de tamaño de archivo ni marcas de agua añadidas a tus documentos."
+    }
+  },
+  "compressImage": {
+    "title": "Comprimir Imagen",
+    "description": "Reduce el tamaño de archivos de imagen para JPEG, PNG y WebP. Todo el procesamiento ocurre en tu navegador.",
+    "dropzone": {
+      "title": "Arrastra y suelta tu archivo aquí",
+      "subtitle": "o haz clic para buscar en tu dispositivo"
+    },
+    "quality": "Calidad: {{value}}%",
+    "smallerFile": "Archivo más pequeño",
+    "betterQuality": "Mejor calidad",
+    "compress": "Comprimir Imagen",
+    "processing": "Procesando...",
+    "result": {
+      "title": "¡Compresión Completada!",
+      "saved": "Tamaño reducido en {{ratio}}%",
+      "originalSize": "Tamaño Original",
+      "compressedSize": "Tamaño Comprimido",
+      "savedLabel": "Ahorrado",
+      "download": "Descargar Imagen Comprimida",
+      "another": "Comprimir otra imagen"
+    },
+    "seo": {
+      "title": "Cómo Comprimir Imágenes",
+      "p1": "Nuestro compresor de imágenes funciona completamente en tu navegador, procesando imágenes JPEG, PNG y WebP localmente sin subirlas a ningún servidor. Esto garantiza máxima privacidad y proporciona resultados de compresión rápidos.",
+      "p2": "Puedes ajustar el control deslizante de calidad para equilibrar entre el tamaño del archivo y la calidad de imagen. Mayor calidad significa archivos más grandes pero mejor apariencia visual, mientras que menor calidad resulta en archivos más pequeños con alguna degradación visual.",
+      "p3": "Esta herramienta es perfecta para optimizar imágenes para sitios web, reducir tamaños de archivo para adjuntos de correo electrónico o ahorrar espacio de almacenamiento. No hay límites en el tamaño del archivo ni en el número de compresiones que puedes realizar."
+    }
+  },
+  "footer": {
+    "title": "PDF Tools",
+    "desc": "Herramientas gratuitas en línea para PDF e imágenes. Procesamiento 100% en el navegador para tu privacidad.",
+    "tools": "Herramientas",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "about": "Acerca de Nosotros",
+    "terms": "Términos de Servicio",
+    "copyright": "© {{year}} PDF Tools. Todos los derechos reservados."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "updated": "Última actualización: {{date}}",
+      "s1Title": "1. Procesamiento en el Navegador",
+      "s1Desc": "Todo el procesamiento de archivos en PDF Tools ocurre completamente dentro de tu navegador web. Tus archivos nunca se suben a nuestros servidores ni a ningún servidor de terceros. Esto significa que tus documentos e imágenes permanecen completamente privados y seguros en tu propio dispositivo.",
+      "s2Title": "2. Sin Recopilación de Datos",
+      "s2Desc": "No recopilamos, almacenamos ni transmitimos ninguno de tus archivos o datos personales. Cuando usas nuestras herramientas, el procesamiento ocurre localmente en tu dispositivo utilizando bibliotecas JavaScript. Una vez que cierras la pestaña de tu navegador o navegas fuera de la página, todos los datos procesados se limpian automáticamente de la memoria.",
+      "s3Title": "3. Análisis",
+      "s3Desc": "Podemos usar Google Analytics para recopilar estadísticas de uso anónimas (como visitas a páginas y uso de herramientas) para mejorar nuestro servicio. Estos datos no incluyen ninguna información personal ni contenido de archivos.",
+      "s4Title": "4. Cookies",
+      "s4Desc": "Usamos cookies únicamente para recordar tus preferencias (como la configuración de idioma) y para fines de análisis. No se usan cookies para rastrear tus archivos o actividades de procesamiento.",
+      "s5Title": "5. Servicios de Terceros",
+      "s5Desc": "Podemos mostrar anuncios a través de Google AdSense. Estos anuncios pueden usar cookies para proporcionar publicidad relevante. Para más información, consulta la Política de Privacidad de Google.",
+      "s6Title": "6. Seguridad",
+      "s6Desc": "Dado que todo el procesamiento ocurre localmente en tu navegador, tus archivos están protegidos por las medidas de seguridad de tu dispositivo. Recomendamos usar un navegador actualizado con los últimos parches de seguridad.",
+      "s7Title": "7. Contacto",
+      "s7Desc": "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en:",
+      "email": "Correo: contact@nextapi.pro"
+    },
+    "about": {
+      "title": "Acerca de PDF Tools",
+      "p1": "PDF Tools es una plataforma gratuita en línea que proporciona herramientas fáciles de usar para procesamiento de PDF e imágenes. Nuestra misión es hacer que la gestión de documentos sea accesible para todos, sin comprometer la privacidad ni la seguridad.",
+      "philosophy": "Nuestra Filosofía",
+      "philosophyDesc": "Creemos que las herramientas de procesamiento de archivos deberían ser:",
+      "private": "Privadas - Tus archivos nunca deberían salir de tu dispositivo",
+      "free": "Gratis - Las herramientas esenciales deberían estar disponibles para todos",
+      "easy": "Fáciles - Sin conocimientos técnicos requeridos",
+      "fast": "Rápidas - Procesamiento instantáneo sin demoras de carga",
+      "howItWorks": "Cómo Funciona",
+      "howItWorksP1": "A diferencia de las herramientas en línea tradicionales que suben tus archivos a servidores remotos, PDF Tools procesa todo localmente en tu navegador web. Usamos bibliotecas JavaScript modernas (como pdf-lib y PDF.js de Mozilla) para manejar la manipulación de PDF directamente en tu dispositivo.",
+      "howItWorksP2": "Este enfoque tiene varias ventajas:",
+      "adv1": "Sin tiempo de carga - el procesamiento comienza inmediatamente",
+      "adv2": "Sin costos de servidor - podemos mantener el servicio gratis",
+      "adv3": "Sin filtraciones de datos - tus archivos nunca salen de tu dispositivo",
+      "adv4": "Funciona sin conexión - una vez cargado, las herramientas funcionan sin internet",
+      "availableTools": "Herramientas Disponibles",
+      "tool1": "Compresor PDF - Reduce el tamaño del archivo PDF",
+      "tool2": "Compresor de Imágenes - Comprime imágenes JPEG, PNG, WebP",
+      "tool3": "PDF a JPG (próximamente)",
+      "tool4": "JPG a PDF (próximamente)",
+      "contact": "¿Tienes sugerencias o comentarios? Envíanos un correo a: contact@nextapi.pro",
+      "availableToolsDesc": "Actualmente, ofrecemos las siguientes herramientas:"
+    },
+    "terms": {
+      "title": "Términos de Servicio",
+      "updated": "Última actualización: {{date}}",
+      "s1Title": "1. Aceptación de los Términos",
+      "s1Desc": "Al acceder y usar PDF Tools, aceptas estar sujeto a estos Términos de Servicio y todas las leyes y regulaciones aplicables. Si no estás de acuerdo con alguno de estos términos, se te prohíbe usar o acceder a este sitio.",
+      "s2Title": "2. Licencia de Uso",
+      "s2Desc": "Se concede permiso para usar temporalmente PDF Tools para fines personales y no comerciales. Esta es la concesión de una licencia, no una transferencia de título, y bajo esta licencia no puedes:",
+      "license1": "Modificar o copiar el código fuente del sitio web",
+      "license2": "Usar el servicio para ningún propósito comercial sin permiso",
+      "license3": "Intentar ingeniería inversa de cualquier software contenido en el sitio web",
+      "license4": "Eliminar cualquier notación de derechos de autor o propietaria",
+      "s3Title": "3. Descargo de Responsabilidad",
+      "s3Desc": "PDF Tools se proporciona \"tal cual\" sin ninguna garantía, expresa o implícita. No garantizamos que:",
+      "disclaimer1": "El servicio será ininterrumpido o sin errores",
+      "disclaimer2": "Los resultados del uso del servicio serán precisos o confiables",
+      "disclaimer3": "La calidad de cualquier producto, servicio o información cumplirá tus expectativas",
+      "s4Title": "4. Limitaciones",
+      "s4Desc": "En ningún caso PDF Tools ni sus operadores serán responsables por ningún daño que surja del uso o la imposibilidad de usar el servicio, incluso si se nos ha notificado la posibilidad de tales daños.",
+      "s5Title": "5. Responsabilidades del Usuario",
+      "s5Desc": "Eres responsable de:",
+      "resp1": "Asegurarte de tener el derecho de procesar cualquier archivo que subas",
+      "resp2": "No usar el servicio para propósitos ilegales o dañinos",
+      "resp3": "Mantener la seguridad de tu propio dispositivo y navegador",
+      "s6Title": "6. Modificaciones",
+      "s6Desc": "Nos reservamos el derecho de modificar o descontinuar el servicio en cualquier momento sin previo aviso. No seremos responsables ante ti ni ningún tercero por cualquier modificación, suspensión o descontinuación del servicio.",
+      "s7Title": "7. Legislación Aplicable",
+      "s7Desc": "Estos términos y condiciones se rigen e interpretan de acuerdo con las leyes aplicables, y te sometes irrevocablemente a la jurisdicción exclusiva de los tribunales en esa ubicación.",
+      "s8Title": "8. Contacto",
+      "s8Desc": "Las preguntas sobre los Términos de Servicio deben enviarse a: contact@nextapi.pro"
+    }
+  },
+  "comingSoon": {
+    "title": "En Desarrollo",
+    "desc": "Esta herramienta está actualmente en desarrollo. ¡Vuelve pronto!"
+  },
+  "error": {
+    "invalidPdf": "Por favor selecciona un archivo PDF válido",
+    "invalidImage": "Por favor selecciona una imagen válida (JPEG, PNG o WebP)",
+    "compressionFailed": "Error al comprimir {{type}}"
+  }
+}

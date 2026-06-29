@@ -1,7 +1,4 @@
-import * as pdfjsLib from 'pdfjs-dist'
-
-// Configure worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+// Dynamic import pdfjs-dist to reduce initial bundle size
 
 export interface PdfToJpgResult {
   blobs: Blob[]
@@ -9,6 +6,12 @@ export interface PdfToJpgResult {
 }
 
 export async function convertPdfToJpg(file: File, quality = 0.9): Promise<PdfToJpgResult> {
+  // Dynamic import pdfjs-dist
+  const pdfjsLib = await import('pdfjs-dist')
+  
+  // Configure worker
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+  
   const arrayBuffer = await file.arrayBuffer()
   const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
   

@@ -1,0 +1,134 @@
+{
+  "site": {
+    "title": "PDF Tools - Kompresor PDF & Gambar Online Gratis",
+    "description": "Alat PDF dan gambar online gratis. Kompres PDF, kompres gambar, konversi PDF ke JPG, dan lainnya. Pemrosesan 100% di browser untuk privasi dan keamanan."
+  },
+  "nav": {
+    "compressPdf": "Kompresor PDF",
+    "compressImage": "Kompresor Gambar",
+    "pdfToJpg": "PDF ke JPG",
+    "jpgToPdf": "JPG ke PDF"
+  },
+  "home": {
+    "title": "Alat PDF & Gambar Gratis",
+    "subtitle": "Pemrosesan 100% di browser. File Anda tidak pernah meninggalkan perangkat Anda. Cepat, aman, dan sepenuhnya gratis.",
+    "features": {
+      "private": {
+        "title": "100% Pribadi",
+        "desc": "Semua pemrosesan terjadi di browser Anda. File Anda tidak pernah meninggalkan perangkat Anda."
+      },
+      "fast": {
+        "title": "Sangat Cepat",
+        "desc": "Tidak ada waktu tunggu upload. Proses file secara instan di perangkat Anda."
+      },
+      "free": {
+        "title": "Sepenuhnya Gratis",
+        "desc": "Tidak ada batasan file, tidak ada watermark, tidak perlu registrasi."
+      },
+      "title": "Mengapa Memilih PDF Tools?"
+    },
+    "seo": {
+      "howToUse": "Cara menggunakan PDF Tools",
+      "p1": "Alat PDF dan gambar kami dirancang sederhana dan intuitif. Pilih alat yang Anda butuhkan, unggah file, dan biarkan prosesor berbasis browser kami melakukan pekerjaan. Tidak perlu instalasi software.",
+      "p2": "Apakah Anda perlu mengompresi PDF besar untuk email, mengonversi gambar ke dokumen PDF, atau mengekstrak gambar dari file PDF, alat kami menangani semuanya. Semua pemrosesan terjadi secara lokal di browser, memastikan file Anda tetap pribadi dan aman.",
+      "p3": "PDF Tools berfungsi di semua browser modern termasuk Chrome, Firefox, Safari, dan Edge. Tidak ada batas ukuran file atau batasan harian. Gunakan alat kami sebanyak yang Anda butuhkan, sepenuhnya gratis."
+    }
+  },
+  "tools": {
+    "compressPdf": {
+      "title": "Kompres PDF",
+      "desc": "Kurangi ukuran file PDF dengan mempertahankan kualitas"
+    },
+    "compressImage": {
+      "title": "Kompres Gambar",
+      "desc": "Kompres gambar JPEG, PNG, WebP secara online"
+    },
+    "pdfToJpg": {
+      "title": "PDF ke JPG",
+      "desc": "Konversi halaman PDF ke gambar JPG"
+    },
+    "jpgToPdf": {
+      "title": "JPG ke PDF",
+      "desc": "Konversi gambar ke dokumen PDF"
+    }
+  },
+  "compressPdf": {
+    "title": "Kompres PDF",
+    "description": "Kurangi ukuran file PDF dengan mempertahankan kualitas dokumen. Semua pemrosesan terjadi di browser Anda.",
+    "dropzone": {
+      "title": "Seret dan lepas file Anda di sini",
+      "subtitle": "atau klik untuk mencari dari perangkat Anda"
+    },
+    "tip": "Tip: Pilih file PDF untuk memulai kompresi. Ukuran maksimal: 50 MB",
+    "compress": "Kompres PDF",
+    "processing": "Memproses...",
+    "result": {
+      "title": "Kompresi Selesai!",
+      "saved": "Ukuran file berkurang {{ratio}}%",
+      "originalSize": "Ukuran Asli",
+      "compressedSize": "Ukuran Terkompresi",
+      "savedLabel": "Hemat",
+      "download": "Unduh PDF Terkompresi",
+      "another": "Kompres PDF lainnya"
+    }
+  },
+  "compressImage": {
+    "title": "Kompres Gambar",
+    "description": "Kurangi ukuran file gambar untuk JPEG, PNG, dan WebP. Semua pemrosesan terjadi di browser Anda.",
+    "dropzone": {
+      "title": "Seret dan lepas file Anda di sini",
+      "subtitle": "atau klik untuk mencari dari perangkat Anda"
+    },
+    "tip": "Tip: Pilih gambar untuk memulai kompresi. Ukuran maksimal: 50 MB",
+    "quality": "Kualitas: {{value}}%",
+    "smallerFile": "File lebih kecil",
+    "betterQuality": "Kualitas lebih baik",
+    "compress": "Kompres Gambar",
+    "processing": "Memproses...",
+    "result": {
+      "title": "Kompresi Selesai!",
+      "saved": "Ukuran file berkurang {{ratio}}%",
+      "originalSize": "Ukuran Asli",
+      "compressedSize": "Ukuran Terkompresi",
+      "savedLabel": "Hemat",
+      "download": "Unduh Gambar Terkompresi",
+      "another": "Kompres gambar lainnya"
+    }
+  },
+  "footer": {
+    "title": "PDF Tools",
+    "desc": "Alat PDF dan gambar online gratis. Pemrosesan 100% di browser untuk privasi Anda.",
+    "tools": "Alat",
+    "legal": "Hukum",
+    "privacy": "Kebijakan Privasi",
+    "about": "Tentang Kami",
+    "terms": "Ketentuan Layanan",
+    "copyright": "© {{year}} PDF Tools. Hak cipta dilindungi."
+  },
+  "comingSoon": {
+    "title": "Sedang Dikembangkan",
+    "desc": "Alat ini sedang dikembangkan. Segera hadir!"
+  },
+  "error": {
+    "invalidPdf": "Silakan pilih file PDF yang valid",
+    "invalidImage": "Silakan pilih gambar yang valid (JPEG, PNG, atau WebP)",
+    "compressionFailed": "Gagal mengompres {{type}}"
+  },
+  "common": {
+    "clear": "Hapus",
+    "processing": "Memproses...",
+    "compress": "Kompres",
+    "download": "Unduh",
+    "copied": "Disalin!",
+    "copy": "Salin",
+    "error": "Kesalahan",
+    "changeLanguage": "Change language"
+  },
+  "pdfToJpg": {
+    "page": "Page {{number}}"
+  },
+  "jpgToPdf": {
+    "image": "Image {{number}}",
+    "mergeFailed": "Failed to merge JPG to PDF"
+  }
+}

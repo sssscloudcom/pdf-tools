@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { PDFDocument } from 'pdf-lib'
 import FileDropZone from '../components/FileDropZone'
 
 export default function CompressPdf() {
@@ -30,6 +29,10 @@ export default function CompressPdf() {
 
     try {
       setProgress(10)
+      
+      // Dynamic import pdf-lib (reduces initial bundle size)
+      const { PDFDocument } = await import('pdf-lib')
+      setProgress(15)
       
       // Read file
       const arrayBuffer = await file.arrayBuffer()

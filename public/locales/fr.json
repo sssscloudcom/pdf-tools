@@ -1,0 +1,134 @@
+{
+  "site": {
+    "title": "PDF Tools - Compresseur PDF et d'images gratuit en ligne",
+    "description": "Outils PDF et image gratuits en ligne. Compresser PDF, compresser des images, convertir PDF en JPG, et plus encore. Traitement 100% dans le navigateur pour la confidentialité et la sécurité."
+  },
+  "nav": {
+    "compressPdf": "Compresseur PDF",
+    "compressImage": "Compresseur d'images",
+    "pdfToJpg": "PDF vers JPG",
+    "jpgToPdf": "JPG vers PDF"
+  },
+  "home": {
+    "title": "Outils PDF et image gratuits",
+    "subtitle": "Traitement 100% dans le navigateur. Vos fichiers ne quittent jamais votre appareil. Rapide, sécurisé et totalement gratuit.",
+    "features": {
+      "private": {
+        "title": "100% Privé",
+        "desc": "Tout le traitement se fait dans votre navigateur. Vos fichiers ne quittent jamais votre appareil."
+      },
+      "fast": {
+        "title": "Ultra Rapide",
+        "desc": "Pas de temps d'attente de téléchargement. Traitez les fichiers instantanément sur votre appareil."
+      },
+      "free": {
+        "title": "Totalement Gratuit",
+        "desc": "Pas de limites de fichiers, pas de filigranes, pas d'inscription requise."
+      },
+      "title": "Pourquoi choisir PDF Tools ?"
+    },
+    "seo": {
+      "howToUse": "Comment utiliser PDF Tools",
+      "p1": "Nos outils PDF et image sont conçus pour être simples et intuitifs. Sélectionnez simplement l'outil nécessaire, téléchargez votre fichier et laissez notre processeur basé sur navigateur faire le travail. Pas d'installation de logiciel requise.",
+      "p2": "Que vous ayez besoin de compresser un grand PDF pour un e-mail, de convertir des images en documents PDF ou d'extraire des images de fichiers PDF, nos outils gèrent tout. Tout le traitement se fait localement dans votre navigateur, garantissant que vos fichiers restent privés et sécurisés.",
+      "p3": "PDF Tools fonctionne sur tous les navigateurs modernes including Chrome, Firefox, Safari et Edge. Il n'y a pas de limite de taille de fichier ni de restrictions quotidiennes. Utilisez nos outils autant que vous le souhaitez, complètement gratuit."
+    }
+  },
+  "tools": {
+    "compressPdf": {
+      "title": "Compresser PDF",
+      "desc": "Réduire la taille du fichier PDF tout en maintenant la qualité"
+    },
+    "compressImage": {
+      "title": "Compresser une image",
+      "desc": "Compresser des images JPEG, PNG, WebP en ligne"
+    },
+    "pdfToJpg": {
+      "title": "PDF vers JPG",
+      "desc": "Convertir les pages PDF en images JPG"
+    },
+    "jpgToPdf": {
+      "title": "JPG vers PDF",
+      "desc": "Convertir des images en document PDF"
+    }
+  },
+  "compressPdf": {
+    "title": "Compresser PDF",
+    "description": "Réduisez la taille du fichier PDF tout en maintenant la qualité du document. Tout le traitement se fait dans votre navigateur.",
+    "dropzone": {
+      "title": "Glissez-déposez votre fichier ici",
+      "subtitle": "ou cliquez pour parcourir votre appareil"
+    },
+    "tip": "Conseil : Sélectionnez un fichier PDF pour démarrer la compression. Taille maximale : 50 Mo",
+    "compress": "Compresser PDF",
+    "processing": "Traitement en cours...",
+    "result": {
+      "title": "Compression terminée !",
+      "saved": "Taille du fichier réduite de {{ratio}}%",
+      "originalSize": "Taille originale",
+      "compressedSize": "Taille compressée",
+      "savedLabel": "Économisé",
+      "download": "Télécharger le PDF compressé",
+      "another": "Compresser un autre PDF"
+    }
+  },
+  "compressImage": {
+    "title": "Compresser une image",
+    "description": "Réduisez la taille des fichiers image pour JPEG, PNG et WebP. Tout le traitement se fait dans votre navigateur.",
+    "dropzone": {
+      "title": "Glissez-déposez votre fichier ici",
+      "subtitle": "ou cliquez pour parcourir votre appareil"
+    },
+    "tip": "Conseil : Sélectionnez une image pour démarrer la compression. Taille maximale : 50 Mo",
+    "quality": "Qualité : {{value}}%",
+    "smallerFile": "Fichier plus petit",
+    "betterQuality": "Meilleure qualité",
+    "compress": "Compresser l'image",
+    "processing": "Traitement en cours...",
+    "result": {
+      "title": "Compression terminée !",
+      "saved": "Taille du fichier réduite de {{ratio}}%",
+      "originalSize": "Taille originale",
+      "compressedSize": "Taille compressée",
+      "savedLabel": "Économisé",
+      "download": "Télécharger l'image compressée",
+      "another": "Compresser une autre image"
+    }
+  },
+  "footer": {
+    "title": "PDF Tools",
+    "desc": "Outils PDF et image gratuits en ligne. Traitement 100% dans le navigateur pour votre confidentialité.",
+    "tools": "Outils",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "about": "À propos",
+    "terms": "Conditions d'utilisation",
+    "copyright": "© {{year}} PDF Tools. Tous droits réservés."
+  },
+  "comingSoon": {
+    "title": "En développement",
+    "desc": "Cet outil est en cours de développement. Revenez bientôt !"
+  },
+  "error": {
+    "invalidPdf": "Veuillez sélectionner un fichier PDF valide",
+    "invalidImage": "Veuillez sélectionner une image valide (JPEG, PNG ou WebP)",
+    "compressionFailed": "Échec de la compression de {{type}}"
+  },
+  "common": {
+    "clear": "Effacer",
+    "processing": "Traitement...",
+    "compress": "Compresser",
+    "download": "Télécharger",
+    "copied": "Copié !",
+    "copy": "Copier",
+    "error": "Erreur",
+    "changeLanguage": "Change language"
+  },
+  "pdfToJpg": {
+    "page": "Page {{number}}"
+  },
+  "jpgToPdf": {
+    "image": "Image {{number}}",
+    "mergeFailed": "Failed to merge JPG to PDF"
+  }
+}
