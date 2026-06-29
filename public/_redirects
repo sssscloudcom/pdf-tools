@@ -1,0 +1,19 @@
+# Cloudflare Pages 重定向规则
+
+# 多语言路由 - 重定向到对应的语言文件夹
+/en/* /en/:splat 200
+/zh/* /zh/:splat 200
+/es/* /es/:splat 200
+/de/* /de/:splat 200
+/ja/* /ja/:splat 200
+/fr/* /fr/:splat 200
+/ru/* /ru/:splat 200
+/pt/* /pt/:splat 200
+/id/* /id/:splat 200
+/ar/* /ar/:splat 200
+
+# 根路径重定向到英文版本
+/ /en 301
+
+# 兼容旧的查询参数模式
+/?lang=* /:lang 301
